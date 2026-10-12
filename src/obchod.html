@@ -1,0 +1,55 @@
+{% extends "_base.html" %}
+{% set titulek = 'Obchod – autokosmetika MacBrite a zboží do domácnosti | EBCC.cz' %}
+{% set popis = 'Celý sortiment EBCC.cz: leštěnky MacBrite Nano Glos, Lotos, Titanium a Xtreme, příslušenství k mytí auta a drobné zboží do domácnosti.' %}
+{% set cesta = 'obchod/' %}
+{% block telo %}obchod{% endblock %}
+{% block obsah %}
+<section class="obchod-hlava">
+  <div class="wrap">
+    <nav class="drobky" aria-label="Drobečková navigace"><a href="{{ url('') }}">Úvod</a> <span aria-hidden="true">/</span> Obchod</nav>
+    <h1>Obchod</h1>
+    <p>{{ data.produkty|length }} produktů skladem. Filtrujte podle kategorie nebo podle toho, co chcete vyleštit.</p>
+  </div>
+</section>
+<section class="obchod">
+  <div class="wrap">
+    <form class="filtr" role="search" onsubmit="return false">
+      <div class="filtr-kat" role="group" aria-label="Kategorie">
+        <button type="button" class="cip" data-k="" aria-pressed="true">Vše</button>
+        {% for k in site.kategorie %}<button type="button" class="cip" data-k="{{ k.id }}" aria-pressed="false">{{ k.kratce }}</button>{% endfor %}
+      </div>
+      <div class="filtr-dalsi">
+        <label class="pole-male">Povrch
+          <select data-f-povrch>
+            <option value="">jakýkoli</option>
+            {% for v in data.povrchy %}<option value="{{ v.id }}">{{ v.nazev }}</option>{% endfor %}
+          </select>
+        </label>
+        <label class="pole-male">Řadit
+          <select data-f-razeni>
+            <option value="">doporučené</option>
+            <option value="levne">od nejlevnějšího</option>
+            <option value="drahe">od nejdražšího</option>
+          </select>
+        </label>
+        <label class="pole-male pole-hledat">Hledat
+          <input type="search" data-f-hledat placeholder="např. jelenice" autocomplete="off">
+        </label>
+      </div>
+    </form>
+    <p class="obchod-pocet" data-f-pocet aria-live="polite">Zobrazeno {{ data.produkty|length }} produktů</p>
+    <ul class="obchod-mrizka" role="list" data-f-mrizka>
+      {% for p in data.produkty %}
+      <li class="karta" data-kat="{{ p.kategorie }}" data-povrchy="{{ p.povrchy|join(' ') }}" data-cena="{{ p.cena }}" data-poradi="{{ loop.index }}" data-text="{{ (p.nazev ~ ' ' ~ p.podtitul ~ ' ' ~ p.kratce)|lower }}">
+        <a class="karta-foto" href="{{ url('produkt/' ~ p.slug) }}" tabindex="-1" aria-hidden="true">{{ img(p.fotky[0], '', sizes='(min-width: 64rem) 14rem, 45vw', cls='karta-img') }}</a>
+        <p class="karta-kat">{% for k in site.kategorie %}{% if k.id == p.kategorie %}{{ k.kratce }}{% endif %}{% endfor %}</p>
+        <h2><a href="{{ url('produkt/' ~ p.slug) }}">{{ p.nazev }}</a></h2>
+        <p>{{ p.kratce }}</p>
+        <div class="karta-pata"><span class="cena">{% if p.cena_drive %}<s>{{ p.cena_drive|kc }}</s> {% endif %}{{ p.cena|kc }}</span><button type="button" class="pridat-mini" data-pridat="{{ p.slug }}" aria-label="Přidat {{ p.nazev }} do košíku">+</button></div>
+      </li>
+      {% endfor %}
+    </ul>
+    <p class="obchod-nic" data-f-nic hidden>Nic jsme nenašli. Zkuste jiné slovo nebo <button type="button" class="odkaz" data-f-reset>zrušit filtr</button>.</p>
+  </div>
+</section>
+{% endblock %}

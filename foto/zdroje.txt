@@ -1,0 +1,2 @@
+Všechny fotky produktů: e-shop klienta https://www.ebcc.cz/files/… (stav 12. 10. 2026), pozadí odstraněno (rembg u2net), ořez.
+Logo: https://www.ebcc.cz/core/template/renykoreni.cz/i/logo.png → static/logo-ebcc.svg (potrace po barvách).

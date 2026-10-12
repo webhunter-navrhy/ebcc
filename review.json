@@ -1,0 +1,16 @@
+{
+  "znamka": 7,
+  "slabiny": [
+    "Sekce „Jak se leští leštěnkou MacBrite“ na mobilu (390 px, buňka 4) má špatné pořadí: nejdřív fotka, popisek a modrý box, nadpis až pod nimi, takže se ukazují věci bez kontextu. Opravit přes CSS order (nebo pořadí v HTML), aby na mobilu šel nejdřív h2 s úvodním odstavcem, pak fotka a nakonec kroky 1–4.",
+    "Hero a karty produktů působí jako obecná šablona e-shopu: čtyři lahve na šedém přechodu v obdélníku, který dole tvrdě končí, a pod ním velká prázdná mezera před „Co chcete vyleštit?“. V mřížce produktů jsou lahve malé uprostřed vysokého šedého pole a malé fotky (Agent Magenta, CAR šampon) jsou ještě menší. Opravit: chipy povrchů (Lak, Sklo, Chrom, Loď/karavan) dát přímo do hero, aby byl nápad s výběrem povrchu vidět hned na první obrazovce. Lahve v hero zvětšit a nechat je přesahovat okraj boxu. V kartách sjednotit výšku produktu (zhruba 80 % pole) a zmenšit šedý podklad.",
+    "Spodek stránky na PC (buňky 7–8) působí nedodělaně: levý sloupec „Jak u nás nakupujete“ končí u Dopravy a vedle vysokého formuláře zůstává velká prázdná šedá plocha. Žlutý placeholder „Způsoby a ceny dopravy doplníme…“ vypadá v návrhu pro klienta jako chyba. Navíc se v buňce 3 řádek chipů láme a „Loď, karavan, motorka“ zůstává osamocený na druhém řádku. Opravit: platby převést na 2×2 dlaždice a formulář zkrátit (telefon volitelný a menší textarea), aby byly sloupce vyrovnané. Placeholder dopravy přepsat na neutrální „Dopravu domluvíme podle zásilky“ bez žlutého zvýraznění. Chipy nechat na jednom řádku s vodorovným scrollem, nebo zkrátit popisky."
+  ],
+  "silne": [
+    "Brand sedí: logo EBCC vlevo v hlavičce celé a ostré, paleta modrá/červená/žlutá převzatá z loga, patička v brandové modré.",
+    "Pravdivý obsah z briefu: slogan „Garáž z láhve pro auto, loď i karavan“, reálné ceny, varianty balení, platby z VOP. Nic vymyšleného, chybějící doprava je otevřeně přiznaná.",
+    "Užitečný nápad pro e-shop: filtr „Co chcete vyleštit?“ podle povrchu, postup leštění v krocích a seznam „Co umí všechny čtyři leštěnky“ odpovídají otázkám zákazníka.",
+    "Čisté řemeslo: QA bez chyb, nic nepřetéká na žádné šířce, 0,8 MB, kontakty a formulář jsou dobře vidět, na mobilu je to čitelné a dotykové cíle jsou dost velké.",
+    "Dvě rodiny písma (Bricolage Grotesque + Figtree) s jasnou hierarchií, bez marquee, grainu a tmavého luxusu."
+  ],
+  "verdikt": "opravit – poctivý, brandově správný a funkční e-shop, výrazně lepší než současný web, ale hero a mřížka produktů zatím působí šablonovitě a spodek stránky a pořadí na mobilu potřebují doladit. Po opravě tří bodů výše je to na 8."
+}

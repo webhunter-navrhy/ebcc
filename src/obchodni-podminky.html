@@ -1,0 +1,17 @@
+{% extends "_base.html" %}
+{% set titulek = 'Obchodní podmínky | EBCC.cz' %}
+{% set popis = 'Všeobecné obchodní podmínky e-shopu EBCC.cz, provozovatel Josef Špičák, IČO 12309796.' %}
+{% set cesta = 'obchodni-podminky/' %}
+{% block telo %}vop{% endblock %}
+{% block obsah %}
+<section class="text-stranka">
+  <div class="wrap text-in">
+    <nav class="drobky" aria-label="Drobečková navigace"><a href="{{ url('') }}">Úvod</a> <span aria-hidden="true">/</span> Obchodní podmínky</nav>
+    <h1>Obchodní podmínky</h1>
+    <p class="doplnime">V návrhu je převzatý dosavadní text z ebcc.cz. Před spuštěním ho s Vámi zaktualizujeme (adresa, doprava, GDPR).</p>
+    <div class="vop">
+      {% for b in data.vop %}{% if 'h' in b %}<h2>{{ b.h }}</h2>{% else %}<p>{{ b.p }}</p>{% endif %}{% endfor %}
+    </div>
+  </div>
+</section>
+{% endblock %}

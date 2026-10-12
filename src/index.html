@@ -1,0 +1,143 @@
+{% extends "_base.html" %}
+{% set titulek = 'Autokosmetika MacBrite – leštěnky na auto, loď i karavan | EBCC.cz' %}
+{% set cesta = '' %}
+{% set lestenky = data.produkty|selectattr('kategorie', 'equalto', 'lestenky')|list %}
+{% set pece = data.produkty|selectattr('kategorie', 'equalto', 'pece')|list %}
+{% set domacnost = data.produkty|selectattr('kategorie', 'equalto', 'domacnost')|list %}
+{% block telo %}uvod{% endblock %}
+{% block obsah %}
+
+<section class="hero">
+  <div class="wrap hero-in">
+    <div class="hero-text">
+      <p class="nadpis-maly">Autokosmetika MacBrite · e-shop Josefa Špičáka</p>
+      <h1>Garáž z&nbsp;láhve pro auto, loď i&nbsp;karavan</h1>
+      <p class="hero-lead">Leštěnky, které čistí bez brusných přísad, chrání lak před povětrnostními vlivy a&nbsp;vydrží i&nbsp;automyčku. Jedna lahev vystačí na čtyři auta střední velikosti.</p>
+      <div class="hero-povrchy">
+        <p class="hero-povrchy-h">Co chcete vyleštit?</p>
+        <div class="hero-cipy">{% for v in data.povrchy %}{% if v.id in ['lak', 'sklo', 'chrom', 'hmyz', 'lod'] %}<a class="cip" href="#povrchy" data-jdi-povrch="{{ v.id }}">{{ v.kratce }}</a>{% endif %}{% endfor %}</div>
+        <a class="odkaz-sipka" href="{{ url('obchod') }}">Celý sortiment ({{ data.produkty|length }} produktů)</a>
+      </div>
+    </div>
+    <div class="kapota" aria-label="Leštěnky MacBrite">
+      <div class="kapota-lesk" aria-hidden="true"></div>
+      <ul class="kapota-lahve" role="list">
+        {% for slug in ['nano-glos', 'lotos', 'titanium', 'xtreme'] %}{% set p = produkty_dle[slug] %}
+        <li class="lahev lahev-{{ loop.index }}">
+          <a href="{{ url('produkt/' ~ p.slug) }}">
+            {{ img(p.fotky[0], p.nazev ~ ', lahev', sizes='(min-width: 64rem) 9rem, 22vw', cls='lahev-foto', eager=true) }}
+            <span class="cenovka"><span class="cenovka-nazev">{{ p.vyber }}</span><span class="cenovka-cena">{{ p.cena|kc }}</span></span>
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="sekce povrchy" id="povrchy">
+  <div class="wrap">
+    <div class="sekce-hlava">
+      <h2>Co chcete vyleštit?</h2>
+      <p>Vyberte povrch a&nbsp;ukážeme, co na něj podle popisu výrobce patří. Leštěnky, čističe i&nbsp;utěrky na jednom místě.</p>
+    </div>
+    <div class="povrchy-volba" role="group" aria-label="Povrch">
+      <button type="button" class="cip" data-povrch="" aria-pressed="true">Vše pro auto</button>
+      {% for v in data.povrchy %}<button type="button" class="cip" data-povrch="{{ v.id }}" aria-pressed="false">{{ v.kratce }}</button>{% endfor %}
+    </div>
+    <p class="povrch-text" data-povrch-text aria-live="polite">Čtyři leštěnky MacBrite a&nbsp;všechno, čím auto umyjete, vysušíte a&nbsp;doleštíte.</p>
+    {% for v in data.povrchy %}<template data-text-pro="{{ v.id }}">{{ v.text }}</template>{% endfor %}
+    <ul class="police police-auto" role="list" data-povrch-mrizka>
+      {% for p in lestenky + pece %}
+      {% set duvody = {} %}{% for v in data.povrchy %}{% for r in v.produkty %}{% if r.slug == p.slug %}{% set _ = duvody.update({v.id: r.proc}) %}{% endif %}{% endfor %}{% endfor %}
+      <li class="karta{% if p.kategorie == 'lestenky' %} karta-lestenka{% endif %}" data-povrchy="{{ (duvody.keys()|list + p.povrchy)|unique|join(' ') }}" data-duvody='{{ duvody|tojson }}'>
+        <a class="karta-foto" href="{{ url('produkt/' ~ p.slug) }}" tabindex="-1" aria-hidden="true">{{ img(p.fotky[0], '', sizes='(min-width: 64rem) 14rem, 45vw', cls='karta-img') }}</a>
+        <h3><a href="{{ url('produkt/' ~ p.slug) }}">{{ p.nazev }}</a></h3>
+        <p class="karta-proc" data-proc>{{ p.kratce }}</p>
+        {% if p.varianty|length > 1 %}<p class="karta-varianty">{% for n, c in p.varianty[1:] %}{{ n }}&nbsp;ks za {{ c|kc }}{% if not loop.last %} · {% endif %}{% endfor %}</p>{% endif %}
+        <div class="karta-pata"><span class="cena">{{ p.cena|kc }}</span><button type="button" class="pridat-mini" data-pridat="{{ p.slug }}" aria-label="Přidat {{ p.nazev }} do košíku">+</button></div>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="sekce postup" id="postup">
+  <div class="wrap postup-in">
+    <div class="postup-levy">
+      <div class="postup-sada" aria-label="Lotos, umělá jelenice a savé rouno">
+        {{ img('umela-jelenice.png', 'MacBrite umělá jelenice', sizes='12rem', cls='sada-jelenice') }}
+        {{ img('lotos.png', 'MacBrite Lotos', sizes='10rem', cls='sada-lahev') }}
+        {{ img('save-rouno.png', 'MacBrite savé rouno', cls='sada-rouno') }}
+      </div>
+      <p class="postup-sada-popis">Leštěnka, jelenice a&nbsp;savé rouno: {{ (produkty_dle['lotos'].cena + produkty_dle['umela-jelenice'].cena + produkty_dle['save-rouno'].cena)|kc }} dohromady.</p>
+      <p class="rada-baleni">{{ lestenky[1].baleni }}</p>
+    </div>
+    <div class="postup-text">
+      <h2>Jak se leští leštěnkou MacBrite</h2>
+      <p class="postup-uvod">Postup je u&nbsp;všech čtyř leštěnek stejný. Leští se jednou až dvakrát do roka, mezi tím stačí auto po umytí přeleštit suchým hadrem.</p>
+      <ol class="kroky" role="list">
+        <li class="krok"><span class="krok-c">Krok 1</span><h3>Protřepat a&nbsp;opláchnout</h3><p>Lahev pořádně protřepejte. Plochu opláchněte od nečistot a&nbsp;prachu.</p></li>
+        <li class="krok"><span class="krok-c">Krok 2</span><h3>Nanést tenkou vrstvu</h3><p>Hadrem v&nbsp;tenké vrstvě. Auto může být suché i&nbsp;vlhké.</p></li>
+        <li class="krok"><span class="krok-c">Krok 3</span><h3>Počkat, až zbělá</h3><p>Chvíli vyčkejte, až povrch dostane nádech bílé barvy.</p></li>
+        <li class="krok"><span class="krok-c">Krok 4</span><h3>Vyleštit dosucha</h3><p>Suchým hadrem do lesku. Nedělá šmouhy.</p></li>
+      </ol>
+      <div class="rada-spolecne">
+        <h3>Co umí všechny čtyři leštěnky</h3>
+        <ul role="list">
+          {% for v in lestenky[1].vlastnosti %}<li>{{ v }}</li>{% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sekce domacnost" id="domacnost">
+  <div class="wrap domacnost-in">
+    <div class="domacnost-hlava">
+      <h2>Do domácnosti</h2>
+      <p>Drobnosti, které se hodí v&nbsp;kuchyni, koupelně i&nbsp;na zahradě. Některé kusy jsou v&nbsp;doprodeji.</p>
+      <a class="odkaz-sipka" href="{{ url('obchod') }}?k=domacnost">Vše v&nbsp;kategorii</a>
+    </div>
+    <ul class="regal" role="list">
+      {% for p in domacnost %}
+      <li>
+        <a class="regal-radek" href="{{ url('produkt/' ~ p.slug) }}">
+          <span class="regal-foto">{{ img(p.fotky[0], '', sizes='4.5rem') }}</span>
+          <span class="regal-nazev">{{ p.nazev }}{% if p.podtitul %} <small>{{ p.podtitul }}</small>{% endif %}</span>
+          <span class="regal-cena">{% if p.cena_drive %}<s>{{ p.cena_drive|kc }}</s> {% endif %}{{ p.cena|kc }}</span>
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="sekce kontakt" id="kontakt">
+  <div class="wrap kontakt-in">
+    <div class="kontakt-nakup">
+      <h2>Jak u&nbsp;nás nakupujete</h2>
+      <h3>Platba</h3>
+      <ul class="platby" role="list">
+        {% for pl in site.platby %}<li><strong>{{ pl.nazev }}</strong> {{ pl.text }}</li>{% endfor %}
+      </ul>
+      <h3>Doprava</h3>
+      <p class="doprava-text">Zásilkou na adresu nebo osobně ve Výšovicích. Ceny dopravy doplníme podle toho, jak zásilky posíláte.</p>
+      <p class="kontakt-vop">Podrobnosti v&nbsp;<a href="{{ url('obchodni-podminky') }}">obchodních podmínkách</a>. Ceny jsou konečné, nejsme plátci DPH.</p>
+    </div>
+    <div class="kontakt-poradime">
+      <h2>Nevíte, kterou vybrat?</h2>
+      <p>Napište, co a&nbsp;na čem chcete leštit, a&nbsp;poradíme. Nebo volejte, rádi se Vám budeme věnovat.</p>
+      <p class="kontakt-udaje"><a href="tel:{{ site.kontakt.telefon|replace(' ', '') }}">{{ site.kontakt.telefon }}</a><a href="mailto:{{ site.kontakt.email }}">{{ site.kontakt.email }}</a></p>
+      {% include "_formular.html" %}
+    </div>
+  </div>
+</section>
+
+<section class="reny">
+  <div class="wrap reny-in">
+    <p>Doporučujeme: <strong>Reny Koření</strong>, koření a&nbsp;mlýnky do kuchyně.</p>
+    <a class="odkaz-sipka" href="https://www.renykoreni.cz" rel="noopener">renykoreni.cz</a>
+  </div>
+</section>
+{% endblock %}

@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="{{ site.lang }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ titulek or site.nazev }}</title>
+<meta name="description" content="{{ popis or site.popis }}">
+{% if site.navrh or noindex %}<meta name="robots" content="noindex, nofollow">{% endif %}
+<meta name="theme-color" content="{{ site.theme_color }}">
+<link rel="canonical" href="{{ site.url }}{{ cesta or '' }}">
+<link rel="icon" href="{{ base }}favicon.png" type="image/png">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="cs_CZ">
+<meta property="og:title" content="{{ titulek or site.nazev }}">
+<meta property="og:description" content="{{ popis or site.popis }}">
+<meta property="og:url" content="{{ site.url }}{{ cesta or '' }}">
+{% if og_url %}<meta property="og:image" content="{{ og_url }}">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">{% endif %}
+<link rel="preload" href="{{ base }}fonts/bricolagegrotesque-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="{{ asset('css/style.css') }}">
+{% block head %}{% endblock %}
+{% if jsonld %}<script type="application/ld+json">{{ jsonld|safe }}</script>{% endif %}
+</head>
+<body class="{% block telo %}{% endblock %}">
+<a class="skip" href="#obsah">Přeskočit na obsah</a>
+<header class="hlavicka">
+  <div class="wrap hlavicka-in">
+    <a href="{{ url('') }}" class="logo"><img src="{{ base }}{{ site.logo }}" alt="EBCC – Euro Bussines Centrál Czech, úvodní stránka" width="112" height="72"></a>
+    <nav class="menu" id="menu" aria-label="Hlavní">
+      <a href="{{ url('obchod') }}">Obchod</a>
+      <a href="{{ url('') }}#povrchy">Co vyleštit</a>
+      <a href="{{ url('obchod') }}?k=lestenky">Leštěnky</a>
+      <a href="{{ url('') }}#postup">Jak leštit</a>
+      <a href="{{ url('') }}#kontakt">Kontakt</a>
+    </nav>
+    <div class="hlavicka-akce">
+      <a class="kosik-odkaz" href="{{ url('kosik') }}" aria-label="Košík"><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2.2l2.1 10.2a2 2 0 0 0 2 1.6h7.6a2 2 0 0 0 2-1.5L20.5 8H6.1" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="10" cy="20" r="1.4" fill="currentColor"/><circle cx="17" cy="20" r="1.4" fill="currentColor"/></svg><span class="kosik-text">Košík</span><span class="kosik-pocet" data-kosik-pocet hidden>0</span></a>
+      <button class="burger" type="button" aria-expanded="false" aria-controls="menu"><span class="sr">Menu</span><span class="burger-c" aria-hidden="true"></span></button>
+    </div>
+  </div>
+</header>
+<main id="obsah">
+{% block obsah %}{% endblock %}
+</main>
+<footer class="paticka">
+  <div class="wrap paticka-in">
+    <div class="paticka-firma">
+      <p class="paticka-nazev">EBCC <span>Euro Bussines Centrál Czech</span></p>
+      <p>Autokosmetika MacBrite a zboží do domácnosti.<br>Provozuje {{ site.provozovatel }}, IČO&nbsp;{{ site.ico }}, neplátce DPH.<br>{{ site.kontakt.adresa.ulice }}, {{ site.kontakt.adresa.psc }}</p>
+    </div>
+    <div>
+      <p class="paticka-h">Obchod</p>
+      <ul role="list">
+        {% for k in site.kategorie %}<li><a href="{{ url('obchod') }}?k={{ k.id }}">{{ k.nazev }}</a></li>{% endfor %}
+        <li><a href="{{ url('kosik') }}">Košík</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="paticka-h">Informace</p>
+      <ul role="list">
+        <li><a href="{{ url('obchodni-podminky') }}">Obchodní podmínky</a></li>
+        <li><a href="{{ url('') }}#kontakt">Platba a kontakt</a></li>
+        <li><a href="https://www.renykoreni.cz" rel="noopener">Doporučujeme: Reny Koření</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="paticka-h">Kontakt</p>
+      <ul role="list">
+        <li><a href="mailto:{{ site.kontakt.email }}">{{ site.kontakt.email }}</a></li>
+        <li><a href="tel:{{ site.kontakt.telefon|replace(' ', '') }}">{{ site.kontakt.telefon }}</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap paticka-spodek"><p>© EBCC.cz · Návrh webu: Studentské Weby</p></div>
+</footer>
+<div class="toast" role="status" aria-live="polite" hidden><span data-toast-text>Přidáno do košíku</span> <a href="{{ url('kosik') }}">Zobrazit košík</a></div>
+<script type="application/json" id="katalog">{{ katalog_json|safe }}</script>
+<script src="{{ asset('js/main.js') }}" defer></script>
+</body>
+</html>

@@ -1,0 +1,158 @@
+[
+ {
+  "id": "lak",
+  "nazev": "Lak auta",
+  "text": "Nový, starší i metalický lak. Leštěnky čistí bez brusných přísad a vrstva vydrží automyčky.",
+  "produkty": [
+   {
+    "slug": "xtreme",
+    "proc": "vyčistí vlasové škrábance, jde i na neumyté auto"
+   },
+   {
+    "slug": "nano-glos",
+    "proc": "jemné škrábance, nezanechá zbytky vosku"
+   },
+   {
+    "slug": "lotos",
+    "proc": "na starší a zoxidované karoserie"
+   },
+   {
+    "slug": "titanium",
+    "proc": "nejnižší cena, výhodně po více kusech"
+   },
+   {
+    "slug": "car-sampon",
+    "proc": "na mytí před leštěním"
+   },
+   {
+    "slug": "save-rouno",
+    "proc": "odsaje vodu a doleští"
+   }
+  ],
+  "kratce": "Lak"
+ },
+ {
+  "id": "sklo",
+  "nazev": "Sklo a zrcadla",
+  "text": "Okna, světlomety, zrcadla. Na sklo pak nepotřebujete další přípravky.",
+  "produkty": [
+   {
+    "slug": "xtreme",
+    "proc": "zušlechtí sklo, za deště lepší výhled, led jde snadněji dolů"
+   },
+   {
+    "slug": "agent-magenta",
+    "proc": "hmyz ze skel, zrcadel a světlometů"
+   },
+   {
+    "slug": "umela-jelenice",
+    "proc": "bez šmouh, kapek a chloupků"
+   },
+   {
+    "slug": "titanium",
+    "proc": "i na zrcadla a okna"
+   }
+  ],
+  "kratce": "Sklo a zrcadla"
+ },
+ {
+  "id": "chrom",
+  "nazev": "Chrom, ráfky a kovy",
+  "text": "Chrom, lehké slitiny, hliníkové ráfky a tvrdá silniční špína.",
+  "produkty": [
+   {
+    "slug": "drop-technology",
+    "proc": "bez kyselin, na hliníkové ráfky a chrom"
+   },
+   {
+    "slug": "nano-glos",
+    "proc": "lesk na chromu a lehkých kovech"
+   },
+   {
+    "slug": "jelenice-houbicka",
+    "proc": "chromované plochy bez šmouh"
+   }
+  ],
+  "kratce": "Chrom a ráfky"
+ },
+ {
+  "id": "hmyz",
+  "nazev": "Hmyz, asfalt, dehet",
+  "text": "Po dálnici hmyz na čelním skle a předku, asfalt na prazích.",
+  "produkty": [
+   {
+    "slug": "agent-magenta",
+    "proc": "odstraňovač hmyzu"
+   },
+   {
+    "slug": "oboustranna-houba",
+    "proc": "na hmyz i asfalt"
+   },
+   {
+    "slug": "lotos",
+    "proc": "odstraní dehet, hmyz i průmyslové znečištění"
+   }
+  ],
+  "kratce": "Hmyz a asfalt"
+ },
+ {
+  "id": "plast",
+  "nazev": "Plastová okna a plasty",
+  "text": "Plastové okenní rámy, hladké plasty, guma, zahradní nábytek.",
+  "produkty": [
+   {
+    "slug": "titanium",
+    "proc": "i na plastové okenní rámy"
+   },
+   {
+    "slug": "car-sampon",
+    "proc": "i na plastová okna a nábytek"
+   },
+   {
+    "slug": "agent-magenta",
+    "proc": "hmyz z hladkých plastů"
+   }
+  ],
+  "kratce": "Plasty"
+ },
+ {
+  "id": "koupelna",
+  "nazev": "Koupelna a obklady",
+  "text": "Leštěnky MacBrite nejsou jen na auto: dlaždice, obklady, vany i zrcadla.",
+  "produkty": [
+   {
+    "slug": "nano-glos",
+    "proc": "dlaždice a koupelnové vany"
+   },
+   {
+    "slug": "titanium",
+    "proc": "obklady, zrcadla a hladké plochy"
+   },
+   {
+    "slug": "lotos",
+    "proc": "dlaždice a koupelnové vany"
+   }
+  ],
+  "kratce": "Koupelna"
+ },
+ {
+  "id": "lod",
+  "nazev": "Loď, karavan, motorka",
+  "text": "„Garáž z láhve“ pro všechno, co parkuje venku: loď, karavan, motorka, i letadlo.",
+  "produkty": [
+   {
+    "slug": "lotos",
+    "proc": "auto, loď, karavan, letadlo, motorka"
+   },
+   {
+    "slug": "titanium",
+    "proc": "motorky, auta i lodě"
+   },
+   {
+    "slug": "car-sampon",
+    "proc": "na karavany a motocykly"
+   }
+  ],
+  "kratce": "Loď, karavan, motorka"
+ }
+]

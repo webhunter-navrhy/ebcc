@@ -1,0 +1,87 @@
+{% extends "_base.html" %}
+{% set p = produkt %}
+{% set kat = (site.kategorie|selectattr('id', 'equalto', p.kategorie)|first) %}
+{% set titulek = p.nazev ~ (' – ' ~ p.podtitul if p.podtitul else '') ~ ' | EBCC.cz' %}
+{% set popis = p.kratce|replace(' ', ' ') ~ ' Cena ' ~ p.cena ~ ' Kč, skladem.' %}
+{% set cesta = 'produkt/' ~ p.slug ~ '/' %}
+{% block telo %}produkt{% endblock %}
+{% block head %}
+{% set ld = {"@context": "https://schema.org", "@type": "Product", "name": p.nazev, "description": p.kratce|replace('\u00a0', ' '), "image": site.url ~ img_url(p.fotky[0], 1280)[base|length:], "sku": p.slug, "offers": {"@type": "Offer", "price": p.cena, "priceCurrency": "CZK", "availability": "https://schema.org/InStock", "url": site.url ~ 'produkt/' ~ p.slug ~ '/', "seller": {"@type": "Organization", "name": "EBCC – " ~ site.provozovatel}}} %}
+{% if p.kategorie != 'domacnost' %}{% set _ = ld.update({"brand": {"@type": "Brand", "name": "MacBrite"}}) %}{% endif %}
+<script type="application/ld+json">{{ ld|tojson }}</script>
+{% endblock %}
+{% block obsah %}
+<section class="detail">
+  <div class="wrap">
+    <nav class="drobky" aria-label="Drobečková navigace"><a href="{{ url('') }}">Úvod</a> <span aria-hidden="true">/</span> <a href="{{ url('obchod') }}?k={{ kat.id }}">{{ kat.nazev }}</a> <span aria-hidden="true">/</span> {{ p.nazev }}</nav>
+    <div class="detail-in">
+      <div class="detail-galerie">
+        <div class="detail-hlavni{% if p.kategorie == 'lestenky' %} detail-hlavni-lak{% endif %}">
+          {% for f in p.fotky %}<div class="detail-snimek" data-snimek="{{ loop.index0 }}" {% if not loop.first %}hidden{% endif %}>{{ img(f, p.nazev ~ (' – pohled ' ~ loop.index if not loop.first else ''), sizes='(min-width: 64rem) 30rem, 80vw', eager=loop.first) }}</div>{% endfor %}
+        </div>
+        {% if p.fotky|length > 1 %}
+        <div class="detail-nahledy" role="group" aria-label="Fotky produktu">
+          {% for f in p.fotky %}<button type="button" class="nahled" data-na="{{ loop.index0 }}" aria-pressed="{{ 'true' if loop.first else 'false' }}" aria-label="Fotka {{ loop.index }}">{{ img(f, '', sizes='4rem', eager=false) }}</button>{% endfor %}
+        </div>
+        {% endif %}
+      </div>
+      <div class="detail-info">
+        <p class="nadpis-maly">{{ kat.nazev }}</p>
+        <h1>{{ p.nazev }}{% if p.podtitul %} <span>{{ p.podtitul }}</span>{% endif %}</h1>
+        <p class="detail-kratce">{{ p.kratce }}</p>
+        <form class="koupit" data-koupit="{{ p.slug }}" onsubmit="return false">
+          {% if p.varianty|length > 1 %}
+          <fieldset class="varianty">
+            <legend>Množství</legend>
+            {% for n, c in p.varianty %}
+            <label class="varianta"><input type="radio" name="v" value="{{ n }}" data-cena="{{ c }}" {% if loop.first %}checked{% endif %}><span>{{ n }}&nbsp;ks</span><strong>{{ c|kc }}</strong>{% if n > 1 %}<small>ušetříte {{ (p.cena * n - c)|kc }}</small>{% endif %}</label>
+            {% endfor %}
+          </fieldset>
+          {% endif %}
+          <p class="detail-cena"><span data-detail-cena>{{ p.cena|kc }}</span>{% if p.cena_drive %} <s>{{ p.cena_drive|kc }}</s>{% endif %}</p>
+          <p class="skladem">Skladem</p>
+          <button type="submit" class="tlacitko tlacitko-velke">Vložit do košíku</button>
+        </form>
+        {% if p.poznamka %}<p class="doplnime">{{ p.poznamka }}</p>{% endif %}
+        {% if p.povrchy %}
+        <div class="detail-povrchy">
+          <p>Hodí se na:</p>
+          <ul role="list">{% for v in data.povrchy %}{% if v.id in p.povrchy %}<li><a class="cip cip-maly" href="{{ url('') }}#povrchy" data-jdi-povrch="{{ v.id }}">{{ v.nazev }}</a></li>{% endif %}{% endfor %}</ul>
+        </div>
+        {% endif %}
+      </div>
+    </div>
+
+    {% if p.popis or p.vlastnosti or p.postup or p.navod %}
+    <div class="detail-popis">
+      <div class="detail-sloupec">
+        {% if p.popis %}<h2>Popis</h2>{% for o in p.popis %}<p>{{ o }}</p>{% endfor %}{% endif %}
+        {% if p.vlastnosti %}<h2>{{ 'Co umí' if p.kategorie == 'lestenky' else 'Vlastnosti' }}</h2><ul class="fajfky" role="list">{% for v in p.vlastnosti %}<li>{{ v }}</li>{% endfor %}</ul>{% endif %}
+      </div>
+      <div class="detail-sloupec">
+        {% if p.postup %}<h2>Jak použít</h2><ol class="cisla">{% for k in p.postup %}<li>{{ k }}</li>{% endfor %}</ol>{% endif %}
+        {% if p.navod %}<h2>Návod: ucpaný odtok</h2><ol class="cisla">{% for k in p.navod %}<li>{{ k }}</li>{% endfor %}</ol>{% endif %}
+        {% if p.baleni %}<p class="detail-baleni">{{ p.baleni }}</p>{% endif %}
+        {% if p.upozorneni %}<p class="detail-baleni">{{ p.upozorneni }}</p>{% endif %}
+      </div>
+    </div>
+    {% endif %}
+
+    {% set podobne = data.produkty|selectattr('kategorie', 'equalto', p.kategorie)|rejectattr('slug', 'equalto', p.slug)|list %}
+    {% if podobne %}
+    <div class="podobne">
+      <h2>{{ 'Další leštěnky' if p.kategorie == 'lestenky' else 'Mohlo by se hodit' }}</h2>
+      <ul class="police" role="list">
+        {% for q in podobne[:4] %}
+        <li class="karta">
+          <a class="karta-foto" href="{{ url('produkt/' ~ q.slug) }}" tabindex="-1" aria-hidden="true">{{ img(q.fotky[0], '', sizes='(min-width: 64rem) 14rem, 45vw', cls='karta-img') }}</a>
+          <h3><a href="{{ url('produkt/' ~ q.slug) }}">{{ q.nazev }}</a></h3>
+          <div class="karta-pata"><span class="cena">{{ q.cena|kc }}</span><button type="button" class="pridat-mini" data-pridat="{{ q.slug }}" aria-label="Přidat {{ q.nazev }} do košíku">+</button></div>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+  </div>
+</section>
+{% endblock %}

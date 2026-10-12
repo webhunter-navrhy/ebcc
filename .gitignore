@@ -1,0 +1,5 @@
+dist/
+.cache/
+qa/
+__pycache__/
+_research/

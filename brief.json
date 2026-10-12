@@ -1,0 +1,121 @@
+{
+ "slug": "ebcc",
+ "zdroj_url": "https://www.ebcc.cz",
+ "firma": "EBCC – Euro Bussines Centrál Czech (Josef Špičák)",
+ "obor": [
+  "e-shop",
+  "autokosmetika MacBrite",
+  "spotřební zboží do domácnosti"
+ ],
+ "ico": "12309796",
+ "ares": {
+  "obchodni_jmeno": "Josef Špičák",
+  "sidlo": "č.p. 12, 79809 Výšovice",
+  "vznik": "1993-01-06",
+  "zdroj": "https://ares.gov.cz"
+ },
+ "kontakty": {
+  "emaily": [
+   "shop@ebcc.cz",
+   "josef.spicak@ebcc.cz"
+  ],
+  "telefony": [
+   "+420 777 662 954"
+  ],
+  "adresa": "Výšovice 12, 798 09 (ARES); VOP uvádí Výšovice 140, 798 09 Vřesovice",
+  "socialni_site": []
+ },
+ "logo": {
+  "soubor": "podklady/logo.png",
+  "zdroj": "https://www.ebcc.cz/core/template/renykoreni.cz/i/logo.png",
+  "rozmery": [
+   594,
+   394
+  ],
+  "svg": "static/logo-ebcc.svg (potrace po barvách)"
+ },
+ "barvy": {
+  "css_promenne": {},
+  "z_css": [
+   "#33a2e2",
+   "#97bf0d",
+   "#f04f00",
+   "#1d5372",
+   "#4f392a",
+   "#e2001a"
+  ],
+  "z_loga": [
+   "#df190e",
+   "#59787a",
+   "#fac9b1"
+  ],
+  "theme_color": "#ffffff",
+  "doporucene": [
+   "#df190e",
+   "#59787a",
+   "#33a2e2",
+   "#97bf0d"
+  ],
+  "brand": {
+   "modra": "#004a98",
+   "cervena": "#df190e",
+   "zluta": "#faec11",
+   "zdroj": "logo"
+  }
+ },
+ "fotky": [
+  {
+   "soubor": "img/*.png",
+   "zdroj": "https://www.ebcc.cz/files/… (vyříznuté pozadí)"
+  }
+ ],
+ "fakta": [
+  {
+   "typ": "sortiment",
+   "text": "21 produktů ve 2 kategoriích (MacBrite-Regulár-Titánium 11, Spotřební zboží 11 vč. duplicit), ceny a varianty množství",
+   "zdroj": "https://www.ebcc.cz/kategorie-a6, /spotrebni-zbozi-a11, produktové stránky"
+  },
+  {
+   "typ": "slogan",
+   "text": "„Garáž z láhve pro auto – loď – karavan“",
+   "zdroj": "https://www.ebcc.cz/macbrite-lotos-lestenka-nano-technologie-p160"
+  },
+  {
+   "typ": "vlastnosti",
+   "text": "balení vystačí na 4 vozidla střední kubatury, nanáší se 1–2× ročně, odolné automyčkám, bez brusných přísad",
+   "zdroj": "popisy Nano Glos, Lotos, Titanium, Xtreme na ebcc.cz"
+  },
+  {
+   "typ": "původ",
+   "text": "Anglický kvalitní výrobek / MacBRITE Chemical Ltd",
+   "zdroj": "https://www.ebcc.cz/macbrite-titanium-darek-p8, /macbrite-nano-glos-…-p139"
+  },
+  {
+   "typ": "platby",
+   "text": "hotově v provozovně, dobírka, převod (Fio banka), karta GoPay; neplátce DPH",
+   "zdroj": "https://www.ebcc.cz/obchodni-podminky-a5 čl. 4"
+  },
+  {
+   "typ": "kontakt",
+   "text": "shop@ebcc.cz, +420 777 662 954 (veřejně na webu)",
+   "zdroj": "https://www.ebcc.cz/"
+  },
+  {
+   "typ": "doporučení",
+   "text": "Doporučujeme: Reny Koření (renykoreni.cz)",
+   "zdroj": "hlavička ebcc.cz"
+  }
+ ],
+ "chybi": [
+  "větší fotky produktů: Agent Magenta (38×100 px), CAR šampon, Drop Technology, savé rouno, mlýnek, citrus zátka",
+  "způsoby a ceny dopravy (VOP je neuvádí)",
+  "jaký dárek je u MacBrite Titanium a žehličky BEEM",
+  "adresa provozovny pro osobní odběr (ARES Výšovice 12 × VOP Výšovice 140)",
+  "popisy u produktů, kde na webu žádné nejsou (citrus zátka, hadr, drhlenka…)",
+  "aktualizace VOP (z roku 2016) a GDPR"
+ ],
+ "popis_webu": "MacBrite auto leštěnka",
+ "mesto": "Výšovice (okres Prostějov)",
+ "cilova_skupina": "řidiči, majitelé lodí/karavanů/motorek, domácnosti; nákup online s dobírkou",
+ "ton": "věcný, prodejní, rodinný e-shop; klient chce web porovnat se svým („jaký jsou letos novinky“)"
+}
