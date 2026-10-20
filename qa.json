@@ -1,10 +1,8 @@
 {
-  "url": "http://localhost:8797/ebcc/",
+  "url": "https://webhunter-navrhy.github.io/ebcc/",
   "ok": true,
   "chyby": [],
-  "varovani": [
-    "Web má noindex (u ostrého webu pravděpodobně chyba)"
-  ],
+  "varovani": [],
   "metriky": {
     "sirky": {
       "1440": {
@@ -32,16 +30,16 @@
         "pocet_pretekajicich": 0
       }
     },
-    "preneseno_PC_MB": 0.81,
+    "preneseno_PC_MB": 0.74,
     "nejvetsi_obrazek_PC": {
       "kB": 140,
-      "url": "http://localhost:8797/ebcc/img/titanium-640.webp"
+      "url": "https://webhunter-navrhy.github.io/ebcc/img/titanium-640.webp"
     },
     "snimku_PC": 8,
-    "preneseno_mobil_MB": 0.81,
+    "preneseno_mobil_MB": 0.74,
     "nejvetsi_obrazek_mobil": {
       "kB": 140,
-      "url": "http://localhost:8797/ebcc/img/titanium-640.webp"
+      "url": "https://webhunter-navrhy.github.io/ebcc/img/titanium-640.webp"
     },
     "snimku_mobil": 10,
     "seo": {
