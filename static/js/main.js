@@ -82,7 +82,7 @@
     var filtruj = function () {
       var p = fP.value, h = fH.value.trim().toLowerCase(), n = 0;
       karty.forEach(function (k) {
-        var ok = (!kat || k.dataset.kat === kat) && (!p || (' ' + k.dataset.povrchy + ' ').indexOf(' ' + p + ' ') > -1) && (!h || k.dataset.text.indexOf(h) > -1);
+        var ok = (!kat || (' ' + k.dataset.kat + ' ').indexOf(' ' + kat + ' ') > -1) && (!p || (' ' + k.dataset.povrchy + ' ').indexOf(' ' + p + ' ') > -1) && (!h || k.dataset.text.indexOf(h) > -1);
         k.hidden = !ok; if (ok) n++;
       });
       var r = fR.value;

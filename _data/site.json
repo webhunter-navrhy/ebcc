@@ -1,52 +1,112 @@
 {
-  "slug": "ebcc",
-  "nazev": "EBCC – autokosmetika MacBrite",
-  "firma": "Euro Bussines Centrál Czech",
-  "provozovatel": "Josef Špičák",
-  "url": "https://webhunter-navrhy.github.io/ebcc/",
-  "base": "/ebcc/",
-  "lang": "cs",
-  "popis": "E-shop autokosmetiky MacBrite: leštěnky Nano Glos, Lotos, Titanium a Xtreme na auto, loď i karavan, příslušenství k mytí a zboží do domácnosti. Josef Špičák, Výšovice.",
-  "navrh": true,
-  "domena": "ebcc.cz",
-  "og_image": "og-ebcc.jpg",
-  "logo": "logo-ebcc.svg",
-  "theme_color": "#004a98",
-  "typ": "Store",
-  "ico": "12309796",
-  "kontakt": {
-    "email": "shop@ebcc.cz",
-    "telefon": "+420 777 662 954",
-    "adresa": {
-      "ulice": "Výšovice 12",
-      "psc": "798 09",
-      "mesto": "Výšovice",
-      "zeme": "CZ"
+ "slug": "ebcc",
+ "nazev": "EBCC – autokosmetika MacBrite",
+ "firma": "Euro Bussines Centrál Czech",
+ "provozovatel": "Josef Špičák",
+ "url": "https://webhunter-navrhy.github.io/ebcc/",
+ "base": "/ebcc/",
+ "lang": "cs",
+ "popis": "E-shop autokosmetiky MacBrite: leštěnky Nano Glos, Lotos, Titanium a Xtreme na auto, loď i karavan, příslušenství k mytí a zboží do domácnosti. Josef Špičák, Výšovice.",
+ "navrh": true,
+ "domena": "ebcc.cz",
+ "og_image": "og-ebcc.jpg",
+ "logo": "logo-ebcc.svg",
+ "theme_color": "#004a98",
+ "typ": "Store",
+ "ico": "12309796",
+ "kontakt": {
+  "email": "shop@ebcc.cz",
+  "telefon": "+420 777 662 954",
+  "adresa": {
+   "ulice": "Výšovice 12",
+   "psc": "798 09",
+   "mesto": "Výšovice",
+   "zeme": "CZ"
+  }
+ },
+ "oteviraci_doba": [],
+ "sameas": [],
+ "cenove_rozpeti": "20–999 Kč",
+ "formular": {
+  "endpoint": "",
+  "demo": true,
+  "predmet": "Dotaz z e-shopu EBCC"
+ },
+ "nav": [
+  {
+   "text": "Obchod",
+   "href": "obchod"
+  },
+  {
+   "text": "Co vyleštit",
+   "href": "#povrchy"
+  },
+  {
+   "text": "Jak leštit",
+   "href": "#postup"
+  },
+  {
+   "text": "Kontakt",
+   "href": "#kontakt"
+  }
+ ],
+ "kategorie": [
+  {
+   "id": "lestenky",
+   "nazev": "Leštěnky MacBrite",
+   "kratce": "Leštěnky"
+  },
+  {
+   "id": "pece",
+   "nazev": "Mytí a péče o auto",
+   "kratce": "Mytí a péče"
+  },
+  {
+   "id": "domacnost",
+   "nazev": "Do domácnosti",
+   "kratce": "Domácnost"
+  }
+ ],
+ "platby": [
+  {
+   "nazev": "Dobírka",
+   "text": "zaplatíte při převzetí zásilky"
+  },
+  {
+   "nazev": "Převodem na účet",
+   "text": "bankovním převodem, účet u Fio banky"
+  },
+  {
+   "nazev": "Kartou online",
+   "text": "přes platební bránu GoPay"
+  },
+  {
+   "nazev": "Hotově při osobním odběru",
+   "text": "ve Výšovicích u Prostějova"
+  }
+ ],
+ "skupiny": [
+  {
+   "id": "macbrite",
+   "nazev": "MacBrite – autokosmetika",
+   "pod": [
+    {
+     "id": "lestenky",
+     "nazev": "Leštěnky"
     }
+   ]
   },
-  "oteviraci_doba": [],
-  "sameas": [],
-  "cenove_rozpeti": "20–999 Kč",
-  "formular": {
-    "endpoint": "",
-    "demo": true,
-    "predmet": "Dotaz z e-shopu EBCC"
+  {
+   "id": "domaci",
+   "nazev": "Domácí potřeby"
   },
-  "nav": [
-    {"text": "Obchod", "href": "obchod"},
-    {"text": "Co vyleštit", "href": "#povrchy"},
-    {"text": "Jak leštit", "href": "#postup"},
-    {"text": "Kontakt", "href": "#kontakt"}
-  ],
-  "kategorie": [
-    {"id": "lestenky", "nazev": "Leštěnky MacBrite", "kratce": "Leštěnky"},
-    {"id": "pece", "nazev": "Mytí a péče o auto", "kratce": "Mytí a péče"},
-    {"id": "domacnost", "nazev": "Do domácnosti", "kratce": "Domácnost"}
-  ],
-  "platby": [
-    {"nazev": "Dobírka", "text": "zaplatíte při převzetí zásilky"},
-    {"nazev": "Převodem na účet", "text": "bankovním převodem, účet u Fio banky"},
-    {"nazev": "Kartou online", "text": "přes platební bránu GoPay"},
-    {"nazev": "Hotově při osobním odběru", "text": "ve Výšovicích u Prostějova"}
-  ]
+  {
+   "id": "cistici",
+   "nazev": "Čisticí prostředky"
+  },
+  {
+   "id": "doplnky",
+   "nazev": "Doplňky a příslušenství"
+  }
+ ]
 }

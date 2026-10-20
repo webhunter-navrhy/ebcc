@@ -309,7 +309,16 @@ s { color: var(--sediva); font-weight: 400; }
 .obchod-hlava p { margin-top: .75rem; color: var(--sediva); font-size: var(--step-1); }
 .obchod { padding-block: 1.5rem var(--sekce); }
 .filtr { display: grid; gap: 1rem; padding-block: 1rem 1.5rem; border-bottom: 1px solid var(--linka); }
-.filtr-kat { display: flex; flex-wrap: wrap; gap: .5rem; }
+.obchod-rozlozeni { display: grid; grid-template-columns: 15.5rem minmax(0, 1fr); gap: 2rem clamp(1.5rem, 3vw, 3rem); align-items: start; }
+.obchod-obsah { min-width: 0; }
+.kat-menu { position: sticky; top: 5.5rem; padding: 1.1rem 1rem 1.2rem; background: var(--bila); border: 1px solid var(--linka); border-radius: 12px; }
+.kat-menu-h { margin-bottom: .6rem; font-size: var(--step--1); font-weight: 700; letter-spacing: .04em; text-transform: uppercase; color: var(--sediva); }
+.filtr-kat, .kat-pod { list-style: none; margin: 0; padding: 0; display: grid; gap: .15rem; }
+.kat-pod { margin: .15rem 0 .3rem 1rem; padding-left: .6rem; border-left: 2px solid var(--linka); }
+.kat-menu .cip { display: flex; justify-content: space-between; align-items: center; gap: .5rem; width: 100%; min-height: 44px; padding: .5rem .7rem; text-align: left; border: 0; border-radius: 8px; background: transparent; color: var(--ink); font: inherit; font-weight: 600; cursor: pointer; }
+.kat-menu .cip:hover { background: #eef3f9; }
+.kat-menu .cip[aria-pressed="true"] { background: var(--modra); color: #fff; }
+.kat-pocet { font-size: var(--step--1); font-weight: 500; opacity: .7; }
 .filtr-dalsi { display: grid; grid-template-columns: repeat(2, minmax(0, 12rem)) minmax(0, 1fr); gap: 1rem; }
 .pole-male { display: grid; gap: .3rem; font-size: var(--step--1); font-weight: 600; color: var(--sediva); }
 .obchod-pocet { margin-block: 1.25rem; color: var(--sediva); font-size: var(--step--1); }
@@ -437,6 +446,10 @@ s { color: var(--sediva); font-weight: 400; }
   .kosik-in { grid-template-columns: minmax(0, 1fr); }
   .filtr-dalsi { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .pole-hledat { grid-column: 1 / -1; }
+}
+@media (max-width: 60rem) {
+  .obchod-rozlozeni { grid-template-columns: minmax(0, 1fr); }
+  .kat-menu { position: static; }
 }
 @media (max-width: 48rem) {
   .police, .obchod-mrizka, .pece .police { grid-template-columns: repeat(2, minmax(0, 1fr)); }

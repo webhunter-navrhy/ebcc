@@ -56,7 +56,8 @@
   "upozorneni": "",
   "cena_drive": null,
   "poznamka": "",
-  "zdroj": "https://www.ebcc.cz/macbrite-xtreme-autokosmetika-autolestenka-p140"
+  "zdroj": "https://www.ebcc.cz/macbrite-xtreme-autokosmetika-autolestenka-p140",
+  "skupina": "macbrite"
  },
  {
   "slug": "nano-glos",
@@ -115,7 +116,8 @@
   "upozorneni": "",
   "cena_drive": null,
   "poznamka": "",
-  "zdroj": "https://www.ebcc.cz/macbrite-nano-glos-autokosmetika-autolestenka-p139"
+  "zdroj": "https://www.ebcc.cz/macbrite-nano-glos-autokosmetika-autolestenka-p139",
+  "skupina": "macbrite"
  },
  {
   "slug": "lotos",
@@ -179,7 +181,8 @@
   "upozorneni": "",
   "cena_drive": null,
   "poznamka": "",
-  "zdroj": "https://www.ebcc.cz/macbrite-lotos-lestenka-nano-technologie-p160"
+  "zdroj": "https://www.ebcc.cz/macbrite-lotos-lestenka-nano-technologie-p160",
+  "skupina": "macbrite"
  },
  {
   "slug": "titanium",
@@ -246,7 +249,8 @@
   "navod": [],
   "upozorneni": "",
   "cena_drive": null,
-  "zdroj": "https://www.ebcc.cz/macbrite-titanium-darek-p8"
+  "zdroj": "https://www.ebcc.cz/macbrite-titanium-darek-p8",
+  "skupina": "macbrite"
  },
  {
   "slug": "agent-magenta",
@@ -274,7 +278,8 @@
   "cena_drive": null,
   "poznamka": "",
   "vyber": "",
-  "zdroj": "https://www.ebcc.cz/macbrite-agent-magenta-p163"
+  "zdroj": "https://www.ebcc.cz/macbrite-agent-magenta-p163",
+  "skupina": "macbrite"
  },
  {
   "slug": "drop-technology",
@@ -302,7 +307,8 @@
   "cena_drive": null,
   "poznamka": "",
   "vyber": "",
-  "zdroj": "https://www.ebcc.cz/macbrite-drop-technology-p164"
+  "zdroj": "https://www.ebcc.cz/macbrite-drop-technology-p164",
+  "skupina": "macbrite"
  },
  {
   "slug": "car-sampon",
@@ -330,7 +336,8 @@
   "cena_drive": null,
   "poznamka": "",
   "vyber": "",
-  "zdroj": "https://www.ebcc.cz/car-sampon-na-myti-automobylu-p143"
+  "zdroj": "https://www.ebcc.cz/car-sampon-na-myti-automobylu-p143",
+  "skupina": "cistici"
  },
  {
   "slug": "umela-jelenice",
@@ -360,7 +367,8 @@
   "cena_drive": null,
   "poznamka": "",
   "vyber": "",
-  "zdroj": "https://www.ebcc.cz/macbrite-umela-jelenice-p142"
+  "zdroj": "https://www.ebcc.cz/macbrite-umela-jelenice-p142",
+  "skupina": "doplnky"
  },
  {
   "slug": "jelenice-houbicka",
@@ -390,7 +398,8 @@
   "cena_drive": null,
   "poznamka": "",
   "vyber": "",
-  "zdroj": "https://www.ebcc.cz/macbrite-umela-jelenice-houbicka-p141"
+  "zdroj": "https://www.ebcc.cz/macbrite-umela-jelenice-houbicka-p141",
+  "skupina": "doplnky"
  },
  {
   "slug": "save-rouno",
@@ -417,7 +426,8 @@
   "cena_drive": null,
   "poznamka": "",
   "vyber": "",
-  "zdroj": "https://www.ebcc.cz/macbrite-save-rouno-lestici-p144"
+  "zdroj": "https://www.ebcc.cz/macbrite-save-rouno-lestici-p144",
+  "skupina": "doplnky"
  },
  {
   "slug": "oboustranna-houba",
@@ -443,7 +453,8 @@
   "cena_drive": null,
   "poznamka": "",
   "vyber": "",
-  "zdroj": "https://www.ebcc.cz/oboustranna-houba-macbrite-p180"
+  "zdroj": "https://www.ebcc.cz/oboustranna-houba-macbrite-p180",
+  "skupina": "doplnky"
  },
  {
   "slug": "turboskrabka",
@@ -467,7 +478,8 @@
   "cena_drive": null,
   "poznamka": "",
   "vyber": "",
-  "zdroj": "https://www.ebcc.cz/turbo-skrabka-nerezova-p149"
+  "zdroj": "https://www.ebcc.cz/turbo-skrabka-nerezova-p149",
+  "skupina": "domaci"
  },
  {
   "slug": "brit-turboskrabka",
@@ -493,7 +505,8 @@
   "cena_drive": null,
   "poznamka": "",
   "vyber": "",
-  "zdroj": "https://www.ebcc.cz/brit-na-turbo-skrabku-p154"
+  "zdroj": "https://www.ebcc.cz/brit-na-turbo-skrabku-p154",
+  "skupina": "domaci"
  },
  {
   "slug": "cistic-odpadu-a2000",
@@ -525,7 +538,8 @@
   "cena_drive": null,
   "poznamka": "",
   "vyber": "",
-  "zdroj": "https://www.ebcc.cz/cistic-odpadu-a-2000-rohrreiniger-p220"
+  "zdroj": "https://www.ebcc.cz/cistic-odpadu-a-2000-rohrreiniger-p220",
+  "skupina": "domaci"
  },
  {
   "slug": "folie-freshnroll",
@@ -558,7 +572,8 @@
   "cena_drive": null,
   "poznamka": "",
   "vyber": "",
-  "zdroj": "https://www.ebcc.cz/potravinova-folie-freshnroll-30-cm300-m-krabicka-s-rezackou-p218"
+  "zdroj": "https://www.ebcc.cz/potravinova-folie-freshnroll-30-cm300-m-krabicka-s-rezackou-p218",
+  "skupina": "domaci"
  },
  {
   "slug": "mlynek",
@@ -582,7 +597,8 @@
   "upozorneni": "",
   "poznamka": "",
   "vyber": "",
-  "zdroj": "https://www.ebcc.cz/rucni-mlynek-renykoreni-mechanicky-p145"
+  "zdroj": "https://www.ebcc.cz/rucni-mlynek-renykoreni-mechanicky-p145",
+  "skupina": "domaci"
  },
  {
   "slug": "drhlenka",
@@ -606,7 +622,8 @@
   "cena_drive": null,
   "poznamka": "",
   "vyber": "",
-  "zdroj": "https://www.ebcc.cz/drhlenka-3ks-reny-koreni-p147"
+  "zdroj": "https://www.ebcc.cz/drhlenka-3ks-reny-koreni-p147",
+  "skupina": "doplnky"
  },
  {
   "slug": "citrus-zatka",
@@ -630,7 +647,8 @@
   "cena_drive": null,
   "poznamka": "",
   "vyber": "",
-  "zdroj": "https://www.ebcc.cz/citrus-zatka-na-citrony-p153"
+  "zdroj": "https://www.ebcc.cz/citrus-zatka-na-citrony-p153",
+  "skupina": "domaci"
  },
  {
   "slug": "hadr-na-podlahu",
@@ -654,7 +672,8 @@
   "cena_drive": null,
   "poznamka": "",
   "vyber": "",
-  "zdroj": "https://www.ebcc.cz/hadr-na-podlahu-eurobussinescentralczech-p178"
+  "zdroj": "https://www.ebcc.cz/hadr-na-podlahu-eurobussinescentralczech-p178",
+  "skupina": "doplnky"
  },
  {
   "slug": "zahradni-nuzky",
@@ -678,7 +697,8 @@
   "cena_drive": null,
   "poznamka": "",
   "vyber": "",
-  "zdroj": "https://www.ebcc.cz/zahradni-nuzky-p5"
+  "zdroj": "https://www.ebcc.cz/zahradni-nuzky-p5",
+  "skupina": "domaci"
  },
  {
   "slug": "zehlicka-beem",
@@ -702,6 +722,7 @@
   "cena_drive": null,
   "poznamka": "",
   "vyber": "",
-  "zdroj": "https://www.ebcc.cz/zehlicka-beem-doprodej-p9"
+  "zdroj": "https://www.ebcc.cz/zehlicka-beem-doprodej-p9",
+  "skupina": "domaci"
  }
 ]

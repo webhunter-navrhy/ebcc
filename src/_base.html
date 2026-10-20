@@ -52,7 +52,7 @@
     <div>
       <p class="paticka-h">Obchod</p>
       <ul role="list">
-        {% for k in site.kategorie %}<li><a href="{{ url('obchod') }}?k={{ k.id }}">{{ k.nazev }}</a></li>{% endfor %}
+        {% for k in site.skupiny %}<li><a href="{{ url('obchod') }}?k={{ k.id }}">{{ k.nazev }}</a></li>{% endfor %}
         <li><a href="{{ url('kosik') }}">Košík</a></li>
       </ul>
     </div>

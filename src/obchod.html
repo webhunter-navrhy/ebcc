@@ -12,12 +12,20 @@
   </div>
 </section>
 <section class="obchod">
-  <div class="wrap">
+  <div class="wrap obchod-rozlozeni">
+    <aside class="kat-menu" aria-label="Kategorie zboží">
+      <p class="kat-menu-h">Kategorie</p>
+      <ul class="filtr-kat" role="list">
+        <li><button type="button" class="cip" data-k="" aria-pressed="true">Všechno zboží <span class="kat-pocet">{{ data.produkty|length }}</span></button></li>
+        {% for s in site.skupiny %}
+        <li><button type="button" class="cip" data-k="{{ s.id }}" aria-pressed="false">{{ s.nazev }} <span class="kat-pocet">{{ data.produkty|selectattr('skupina', 'equalto', s.id)|list|length }}</span></button>
+          {% if s.pod is defined %}<ul role="list" class="kat-pod">{% for q in s.pod %}<li><button type="button" class="cip" data-k="{{ q.id }}" aria-pressed="false">{{ q.nazev }} <span class="kat-pocet">{{ data.produkty|selectattr('kategorie', 'equalto', q.id)|list|length }}</span></button></li>{% endfor %}</ul>{% endif %}
+        </li>
+        {% endfor %}
+      </ul>
+    </aside>
+    <div class="obchod-obsah">
     <form class="filtr" role="search" onsubmit="return false">
-      <div class="filtr-kat" role="group" aria-label="Kategorie">
-        <button type="button" class="cip" data-k="" aria-pressed="true">Vše</button>
-        {% for k in site.kategorie %}<button type="button" class="cip" data-k="{{ k.id }}" aria-pressed="false">{{ k.kratce }}</button>{% endfor %}
-      </div>
       <div class="filtr-dalsi">
         <label class="pole-male">Povrch
           <select data-f-povrch>
@@ -40,7 +48,7 @@
     <p class="obchod-pocet" data-f-pocet aria-live="polite">Zobrazeno {{ data.produkty|length }} produktů</p>
     <ul class="obchod-mrizka" role="list" data-f-mrizka>
       {% for p in data.produkty %}
-      <li class="karta" data-kat="{{ p.kategorie }}" data-povrchy="{{ p.povrchy|join(' ') }}" data-cena="{{ p.cena }}" data-poradi="{{ loop.index }}" data-text="{{ (p.nazev ~ ' ' ~ p.podtitul ~ ' ' ~ p.kratce)|lower }}">
+      <li class="karta" data-kat="{{ p.skupina }} {{ p.kategorie }}" data-povrchy="{{ p.povrchy|join(' ') }}" data-cena="{{ p.cena }}" data-poradi="{{ loop.index }}" data-text="{{ (p.nazev ~ ' ' ~ p.podtitul ~ ' ' ~ p.kratce)|lower }}">
         <a class="karta-foto" href="{{ url('produkt/' ~ p.slug) }}" tabindex="-1" aria-hidden="true">{{ img(p.fotky[0], '', sizes='(min-width: 64rem) 14rem, 45vw', cls='karta-img') }}</a>
         <p class="karta-kat">{% for k in site.kategorie %}{% if k.id == p.kategorie %}{{ k.kratce }}{% endif %}{% endfor %}</p>
         <h2><a href="{{ url('produkt/' ~ p.slug) }}">{{ p.nazev }}</a></h2>
@@ -50,6 +58,7 @@
       {% endfor %}
     </ul>
     <p class="obchod-nic" data-f-nic hidden>Nic jsme nenašli. Zkuste jiné slovo nebo <button type="button" class="odkaz" data-f-reset>zrušit filtr</button>.</p>
+    </div>
   </div>
 </section>
 {% endblock %}
