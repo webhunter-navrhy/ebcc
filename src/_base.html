@@ -28,12 +28,12 @@
   <div class="wrap hlavicka-in">
     <a href="{{ url('') }}" class="logo"><img src="{{ base }}{{ site.logo }}" alt="EBCC – Euro Bussines Centrál Czech, úvodní stránka" width="112" height="72"></a>
     <nav class="menu" id="menu" aria-label="Hlavní">
-      <a href="{{ url('obchod') }}">Obchod</a>
-      <a href="{{ url('') }}#povrchy">Co vyleštit</a>
-      <a href="{{ url('obchod') }}?k=lestenky">Leštěnky</a>
-      <a href="{{ url('') }}#postup">Jak leštit</a>
-      <a href="{{ url('') }}#kontakt">Kontakt</a>
+      {% macro sada(id, polozky, skryta) %}<div class="menu-sada" data-sada="{{ id }}"{% if skryta %} hidden{% endif %}>{% for n in polozky %}<a href="{% if n.href.startswith('#') %}{{ url('') }}{{ n.href }}{% else %}{% set cast = n.href.split('?') %}{{ url(cast[0]) }}{% if cast|length > 1 %}?{{ cast[1] }}{% endif %}{% endif %}">{{ n.text }}</a>{% endfor %}</div>{% endmacro %}
+      {% set aktivni = menu_skupina or '' %}
+      {{ sada('', site.nav_vychozi, aktivni != '') }}
+      {% for g in site.skupiny %}{{ sada(g.id, g.nav, aktivni != g.id) }}{% endfor %}
     </nav>
+
     <div class="hlavicka-akce">
       <a class="kosik-odkaz" href="{{ url('kosik') }}" aria-label="Košík"><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2.2l2.1 10.2a2 2 0 0 0 2 1.6h7.6a2 2 0 0 0 2-1.5L20.5 8H6.1" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="10" cy="20" r="1.4" fill="currentColor"/><circle cx="17" cy="20" r="1.4" fill="currentColor"/></svg><span class="kosik-text">Košík</span><span class="kosik-pocet" data-kosik-pocet hidden>0</span></a>
       <button class="burger" type="button" aria-expanded="false" aria-controls="menu"><span class="sr">Menu</span><span class="burger-c" aria-hidden="true"></span></button>

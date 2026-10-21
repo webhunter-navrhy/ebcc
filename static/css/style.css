@@ -127,6 +127,7 @@ s { color: var(--sediva); font-weight: 400; }
 .logo { flex: none; display: block; padding-block: 8px; }
 .logo img { width: 112px; height: auto; }
 .menu { display: flex; gap: .25rem 1.5rem; margin-left: auto; }
+.menu-sada { display: contents; }
 .menu a { display: inline-flex; align-items: center; min-height: 44px; text-decoration: none; font-weight: 500; color: var(--ink); background: linear-gradient(var(--cervena), var(--cervena)) left 85% / 0 2px no-repeat; transition: background-size .25s; }
 .menu a:hover { background-size: 100% 2px; }
 .hlavicka-akce { display: flex; align-items: center; gap: .5rem; }

@@ -4,6 +4,7 @@
 {% set titulek = p.nazev ~ (' – ' ~ p.podtitul if p.podtitul else '') ~ ' | EBCC.cz' %}
 {% set popis = p.kratce|replace(' ', ' ') ~ ' Cena ' ~ p.cena ~ ' Kč, skladem.' %}
 {% set cesta = 'produkt/' ~ p.slug ~ '/' %}
+{% set menu_skupina = produkt.skupina %}
 {% block telo %}produkt{% endblock %}
 {% block head %}
 {% set ld = {"@context": "https://schema.org", "@type": "Product", "name": p.nazev, "description": p.kratce|replace('\u00a0', ' '), "image": site.url ~ img_url(p.fotky[0], 1280)[base|length:], "sku": p.slug, "offers": {"@type": "Offer", "price": p.cena, "priceCurrency": "CZK", "availability": "https://schema.org/InStock", "url": site.url ~ 'produkt/' ~ p.slug ~ '/', "seller": {"@type": "Organization", "name": "EBCC – " ~ site.provozovatel}}} %}

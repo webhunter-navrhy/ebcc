@@ -188,7 +188,7 @@ def main():
     produkty_dle = {x["slug"]: x for x in data.get("produkty", [])}
     env.globals.update(produkty_dle=produkty_dle)
     env.globals.update(site=site, data=data, base=base, asset=asset, url=url, img=obr.img, img_url=obr.img_url,
-                       og_url=og_url, jsonld=jsonld(site), titulek="", popis="", cesta="", noindex=False)
+                       og_url=og_url, jsonld=jsonld(site), titulek="", popis="", cesta="", menu_skupina="", noindex=False)
     katalog = [{"slug": x["slug"], "nazev": x["nazev"], "podtitul": x.get("podtitul", ""), "cena": x["cena"],
                 "varianty": x.get("varianty") or [[1, x["cena"]]], "foto": obr.img_url(x["fotky"][0], 640),
                 "url": url("produkt/" + x["slug"])} for x in data.get("produkty", [])]

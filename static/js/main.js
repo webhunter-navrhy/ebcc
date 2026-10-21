@@ -94,13 +94,18 @@
       $('[data-f-pocet]').textContent = 'Zobrazeno ' + n + (n === 1 ? ' produkt' : (n > 1 && n < 5 ? ' produkty' : ' produktů'));
       $('[data-f-nic]').hidden = n > 0;
     };
-    var nastavKat = function (k) { kat = k; katCipy.forEach(function (c) { c.setAttribute('aria-pressed', c.dataset.k === k); }); filtruj(); };
+    var prepniMenu = function (k) {
+      var c = katCipy.filter(function (x) { return x.dataset.k === k; })[0], s = c && c.dataset.sada || '';
+      $$('.menu-sada').forEach(function (m) { m.hidden = m.dataset.sada !== s; });
+    };
+    var nastavKat = function (k) { kat = k; prepniMenu(k); katCipy.forEach(function (c) { c.setAttribute('aria-pressed', c.dataset.k === k); }); filtruj(); };
     katCipy.forEach(function (c) { c.addEventListener('click', function () { nastavKat(c.dataset.k); }); });
     [fP, fR].forEach(function (el) { el.addEventListener('change', filtruj); });
     fH.addEventListener('input', filtruj);
     $('[data-f-reset]').addEventListener('click', function () { fP.value = ''; fR.value = ''; fH.value = ''; nastavKat(''); });
     var q = new URLSearchParams(location.search);
     if (q.get('p')) fP.value = q.get('p');
+    if (q.get('h')) fH.value = q.get('h').toLowerCase();
     nastavKat(q.get('k') || '');
   }
 

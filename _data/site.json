@@ -94,19 +94,117 @@
      "id": "lestenky",
      "nazev": "Leštěnky"
     }
+   ],
+   "nav": [
+    {
+     "text": "Obchod",
+     "href": "obchod"
+    },
+    {
+     "text": "Co vyleštit",
+     "href": "#povrchy"
+    },
+    {
+     "text": "Leštěnky",
+     "href": "obchod?k=lestenky"
+    },
+    {
+     "text": "Jak leštit",
+     "href": "#postup"
+    },
+    {
+     "text": "Kontakt",
+     "href": "#kontakt"
+    }
    ]
   },
   {
    "id": "domaci",
-   "nazev": "Domácí potřeby"
+   "nazev": "Domácí potřeby",
+   "nav": [
+    {
+     "text": "Obchod",
+     "href": "obchod"
+    },
+    {
+     "text": "Domácí potřeby",
+     "href": "obchod?k=domaci"
+    },
+    {
+     "text": "Doprodej",
+     "href": "obchod?h=doprodej"
+    },
+    {
+     "text": "Platba a kontakt",
+     "href": "#kontakt"
+    }
+   ]
   },
   {
    "id": "cistici",
-   "nazev": "Čisticí prostředky"
+   "nazev": "Čisticí prostředky",
+   "nav": [
+    {
+     "text": "Obchod",
+     "href": "obchod"
+    },
+    {
+     "text": "Čisticí prostředky",
+     "href": "obchod?k=cistici"
+    },
+    {
+     "text": "Mytí a péče",
+     "href": "obchod?k=pece"
+    },
+    {
+     "text": "Platba a kontakt",
+     "href": "#kontakt"
+    }
+   ]
   },
   {
    "id": "doplnky",
-   "nazev": "Doplňky a příslušenství"
+   "nazev": "Doplňky a příslušenství",
+   "nav": [
+    {
+     "text": "Obchod",
+     "href": "obchod"
+    },
+    {
+     "text": "Doplňky a příslušenství",
+     "href": "obchod?k=doplnky"
+    },
+    {
+     "text": "Mytí a péče",
+     "href": "obchod?k=pece"
+    },
+    {
+     "text": "Platba a kontakt",
+     "href": "#kontakt"
+    }
+   ]
+  }
+ ],
+ "nav_vychozi": [
+  {
+   "text": "Obchod",
+   "href": "obchod"
+  },
+  {
+   "text": "Co vyleštit",
+   "href": "#povrchy"
+  },
+  {
+   "text": "Leštěnky",
+   "href": "obchod?k=lestenky"
+  },
+  {
+   "text": "Jak leštit",
+   "href": "#postup"
+  },
+  {
+   "text": "Kontakt",
+   "href": "#kontakt"
   }
  ]
 }

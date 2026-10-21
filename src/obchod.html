@@ -18,8 +18,8 @@
       <ul class="filtr-kat" role="list">
         <li><button type="button" class="cip" data-k="" aria-pressed="true">Všechno zboží <span class="kat-pocet">{{ data.produkty|length }}</span></button></li>
         {% for s in site.skupiny %}
-        <li><button type="button" class="cip" data-k="{{ s.id }}" aria-pressed="false">{{ s.nazev }} <span class="kat-pocet">{{ data.produkty|selectattr('skupina', 'equalto', s.id)|list|length }}</span></button>
-          {% if s.pod is defined %}<ul role="list" class="kat-pod">{% for q in s.pod %}<li><button type="button" class="cip" data-k="{{ q.id }}" aria-pressed="false">{{ q.nazev }} <span class="kat-pocet">{{ data.produkty|selectattr('kategorie', 'equalto', q.id)|list|length }}</span></button></li>{% endfor %}</ul>{% endif %}
+        <li><button type="button" class="cip" data-k="{{ s.id }}" data-sada="{{ s.id }}" aria-pressed="false">{{ s.nazev }} <span class="kat-pocet">{{ data.produkty|selectattr('skupina', 'equalto', s.id)|list|length }}</span></button>
+          {% if s.pod is defined %}<ul role="list" class="kat-pod">{% for q in s.pod %}<li><button type="button" class="cip" data-k="{{ q.id }}" data-sada="{{ s.id }}" aria-pressed="false">{{ q.nazev }} <span class="kat-pocet">{{ data.produkty|selectattr('kategorie', 'equalto', q.id)|list|length }}</span></button></li>{% endfor %}</ul>{% endif %}
         </li>
         {% endfor %}
       </ul>
