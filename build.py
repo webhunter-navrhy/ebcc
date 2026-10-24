@@ -231,13 +231,31 @@ def main():
         if navrh:
             fh.write("User-agent: *\nDisallow: /\n")
         else:
-            fh.write(f"User-agent: *\nAllow: /\n\nSitemap: {site['url']}sitemap.xml\n")
+            fh.write(f"User-agent: *\nDisallow: {base}admin/\nAllow: /\n\nSitemap: {site['url']}sitemap.xml\n")
     dnes = datetime.date.today().isoformat()
     with open(os.path.join(DIST, "sitemap.xml"), "w", encoding="utf-8") as fh:
         fh.write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n')
         for s in stranky:
             fh.write(f"  <url><loc>{site['url']}{s}</loc><lastmod>{dnes}</lastmod></url>\n")
         fh.write("</urlset>\n")
+    # administrace: kopie admin/, seznam obrázků k výběru (název -> náhled), version.json, cache busting
+    adm = os.path.join(ROOT, "admin")
+    if os.path.isdir(adm):
+        shutil.copytree(adm, os.path.join(DIST, "admin"), dirs_exist_ok=True)
+        knihovna = {}
+        for kor, _, soubory in os.walk(IMG):
+            for f in sorted(soubory):
+                rel = os.path.relpath(os.path.join(kor, f), IMG)
+                if os.path.splitext(f)[1].lower() in RASTER:
+                    knihovna[rel] = obr.img_url(rel, 640)[len(base):]
+        with open(os.path.join(DIST, "admin", "images.json"), "w", encoding="utf-8") as fh:
+            json.dump(knihovna, fh, ensure_ascii=False)
+        with open(os.path.join(DIST, "version.json"), "w") as fh:
+            json.dump({"sha": os.environ.get("GITHUB_SHA", "local")}, fh)
+        ai = os.path.join(DIST, "admin", "index.html")
+        t = open(ai, encoding="utf-8").read()
+        t = t.replace("__V_ACSS__", hash_souboru(os.path.join(DIST, "admin", "admin.css"))).replace("__V_AJS__", hash_souboru(os.path.join(DIST, "admin", "admin.js")))
+        open(ai, "w", encoding="utf-8").write(t)
     open(os.path.join(DIST, ".nojekyll"), "w").close()
     if site.get("domena") and not navrh:
         open(os.path.join(DIST, "CNAME"), "w").write(site["domena"] + "\n")

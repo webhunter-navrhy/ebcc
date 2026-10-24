@@ -8,7 +8,7 @@
   <div class="wrap">
     <nav class="drobky" aria-label="Drobečková navigace"><a href="{{ url('') }}">Úvod</a> <span aria-hidden="true">/</span> Košík</nav>
     <h1>Košík</h1>
-    <p class="doplnime">Ukázka košíku v návrhu webu: zboží si můžete vyzkoušet přidat, objednávka se zatím nikam neodešle.</p>
+    {% if data.shop.test_notice %}<p class="doplnime">{{ data.shop.test_notice }}</p>{% endif %}
     <div class="kosik-in">
       <div class="kosik-polozky">
         <ul class="kosik-seznam" role="list" data-kosik-seznam></ul>
@@ -17,36 +17,39 @@
           <a class="tlacitko" href="{{ url('obchod') }}">Do obchodu</a>
         </div>
       </div>
-      <form class="objednavka" data-objednavka onsubmit="return false" hidden>
+      <form class="objednavka" data-objednavka hidden>
         <h2>Doprava a platba</h2>
         <fieldset>
           <legend>Doprava</legend>
-          <label class="volba"><input type="radio" name="doprava" value="zasilka" checked><span>Zásilka na adresu<small>cenu doplníme</small></span></label>
-          <label class="volba"><input type="radio" name="doprava" value="osobne"><span>Osobní odběr ve Výšovicích<small>po domluvě</small></span></label>
+          <div data-doprava></div>
         </fieldset>
         <fieldset>
           <legend>Platba</legend>
-          {% for pl in site.platby %}<label class="volba"><input type="radio" name="platba" value="{{ loop.index }}" {% if loop.first %}checked{% endif %}><span>{{ pl.nazev }}<small>{{ pl.text }}</small></span></label>{% endfor %}
+          <div data-platba></div>
         </fieldset>
         <h2>Vaše údaje</h2>
         <div class="pole-mrizka">
           <label>Jméno a příjmení <input name="jmeno" autocomplete="name" required></label>
           <label>E-mail <input name="email" type="email" autocomplete="email" required></label>
-          <label>Telefon <input name="telefon" type="tel" autocomplete="tel"></label>
+          <label>Telefon <input name="telefon" type="tel" autocomplete="tel" required></label>
           <label>Ulice a číslo <input name="ulice" autocomplete="street-address"></label>
           <label>Město <input name="mesto" autocomplete="address-level2"></label>
           <label>PSČ <input name="psc" autocomplete="postal-code" inputmode="numeric"></label>
+          <label class="siroke">Poznámka (např. výdejní místo) <textarea name="poznamka" rows="2"></textarea></label>
+          <input name="web" class="past" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px">
         </div>
         <div class="souhrn">
           <p><span>Zboží</span><strong data-souhrn-zbozi>0 Kč</strong></p>
-          <p><span>Doprava</span><strong>doplníme</strong></p>
-          <p class="souhrn-celkem"><span>Celkem za zboží</span><strong data-souhrn-celkem>0 Kč</strong></p>
+          <p><span>Doprava</span><strong data-souhrn-doprava>vyberte</strong></p>
+          <p class="souhrn-celkem"><span>Celkem</span><strong data-souhrn-celkem>0 Kč</strong></p>
         </div>
-        <label class="souhlas"><input type="checkbox" required> <span>Souhlasím s&nbsp;<a href="{{ url('obchodni-podminky') }}">obchodními podmínkami</a></span></label>
+        <label class="souhlas"><input type="checkbox" name="agree" required> <span>Souhlasím s&nbsp;<a href="{{ url('obchodni-podminky') }}">obchodními podmínkami</a></span></label>
         <button type="submit" class="tlacitko tlacitko-velke">Odeslat objednávku</button>
         <p class="formular-stav" role="status" aria-live="polite" data-objednavka-stav></p>
       </form>
+      <div class="objednano" data-objednano hidden></div>
     </div>
   </div>
 </section>
+<script type="application/json" id="shop">{{ data.shop|tojson|safe }}</script>
 {% endblock %}

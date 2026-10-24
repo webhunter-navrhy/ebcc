@@ -132,7 +132,8 @@
   var seznam = $('[data-kosik-seznam]');
   if (seznam) {
     var obj = $('[data-objednavka]'), prazdny = $('[data-kosik-prazdny]');
-    var vykresli = function () {
+    var vykresli;
+    vykresli = function () {
       var k = nacti().filter(function (i) { return katalog[i.slug]; });
       seznam.innerHTML = '';
       var suma = 0;
@@ -162,10 +163,86 @@
       $('[data-souhrn-zbozi]').textContent = kc(suma);
       $('[data-souhrn-celkem]').textContent = kc(suma);
     };
+    var SHOP = {}; try { SHOP = JSON.parse($('#shop').textContent); } catch (e) {}
+    var API = 'https://webhunter-admin.webhunter.workers.dev/api/ebcc/order';
+    var dopr = (SHOP.shipping || []).filter(function (x) { return x.active !== false; });
+    var dBox = $('[data-doprava]'), pBox = $('[data-platba]'), stav = $('[data-objednavka-stav]'), t0 = Date.now();
+    var volba = function (name, val, nazev, male, chk) {
+      var l = document.createElement('label'); l.className = 'volba';
+      l.innerHTML = '<input type="radio" name="' + name + '" value="' + val + '"' + (chk ? ' checked' : '') + '><span></span>';
+      $('span', l).textContent = nazev; if (male) { var m = document.createElement('small'); m.textContent = male; $('span', l).appendChild(m); }
+      return l;
+    };
+    var zbozi = function () { return nacti().filter(function (i) { return katalog[i.slug]; }).reduce(function (s, i) { return s + cenaPolozky(i); }, 0); };
+    var vyber = function (n) { var r = $('input[name="' + n + '"]:checked', obj); return r ? r.value : ''; };
+    var cenaDopravy = function (d, pay, sum) {
+      if (!d) return null;
+      var cod = pay === 'dobirka';
+      if (SHOP.free_from && sum >= SHOP.free_from) return cod ? Math.max(0, d.cod_price - d.price) : 0;
+      return cod ? d.cod_price : d.price;
+    };
+    var prekresliPlatby = function () {
+      var d = dopr.filter(function (x) { return x.id === vyber('doprava'); })[0], cur = vyber('platba') || 'prevod';
+      pBox.innerHTML = '';
+      var mozne = [['prevod', 'Převodem na účet', 'údaje a QR kód dostanete po odeslání']];
+      if (d && d.cod_price != null) mozne.push(['dobirka', 'Dobírkou', 'doplatek za dobírku ' + kc(d.cod_price - d.price)]);
+      if (d && d.cash) mozne.push(['hotove', 'Hotově při převzetí', '']);
+      if (!mozne.some(function (m) { return m[0] === cur; })) cur = 'prevod';
+      mozne.forEach(function (m) { pBox.appendChild(volba('platba', m[0], m[1], m[2], m[0] === cur)); });
+      $$('input[name="platba"]', obj).forEach(function (r) { r.addEventListener('change', soucty); });
+      var adr = d && d.address;
+      ['ulice', 'mesto', 'psc'].forEach(function (n) { var el = $('[name="' + n + '"]', obj); el.required = !!adr; });
+    };
+    var soucty = function () {
+      var d = dopr.filter(function (x) { return x.id === vyber('doprava'); })[0], sum = zbozi(), dp = cenaDopravy(d, vyber('platba'), sum);
+      $('[data-souhrn-doprava]').textContent = dp === null ? 'vyberte' : (dp === 0 ? 'zdarma' : kc(dp));
+      $('[data-souhrn-celkem]').textContent = kc(sum + (dp || 0));
+    };
+    dopr.forEach(function (d, i) {
+      var male = d.note || '';
+      dBox.appendChild(volba('doprava', d.id, d.name + ' – ' + (d.price ? kc(d.price) : 'zdarma'), male, i === 0));
+    });
+    $$('input[name="doprava"]', obj).forEach(function (r) { r.addEventListener('change', function () { prekresliPlatby(); soucty(); }); });
+    prekresliPlatby(); soucty();
+    var puvodniVykresli = vykresli;
+    vykresli = function () { puvodniVykresli(); soucty(); };
     vykresli();
     obj.addEventListener('submit', function (e) {
       e.preventDefault();
-      $('[data-objednavka-stav]').textContent = 'Ukázka: v návrhu se objednávka neodesílá. Po spuštění přijde Vám i nám e-mail s potvrzením.';
+      var f = obj.elements, k = nacti().filter(function (i) { return katalog[i.slug]; });
+      if (!k.length) return;
+      var d = dopr.filter(function (x) { return x.id === vyber('doprava'); })[0];
+      var dp = cenaDopravy(d, vyber('platba'), zbozi());
+      var btn = $('button[type="submit"]', obj); btn.disabled = true; stav.textContent = 'Odesílám objednávku…';
+      var body = {
+        items: k.map(function (i) {
+          var p = katalog[i.slug], idx = 0;
+          p.varianty.forEach(function (v, n) { if (v[0] === i.ks) idx = n; });
+          return { id: i.slug, v: idx, q: i.qty };
+        }),
+        customer: { name: f.jmeno.value, email: f.email.value, phone: f.telefon.value, street: f.ulice.value, city: f.mesto.value, zip: f.psc.value, note: f.poznamka.value },
+        ship: vyber('doprava'), pay: vyber('platba'), agree: f.agree.checked, total: zbozi() + (dp || 0), hp: f.web.value, ms: Date.now() - t0
+      };
+      fetch(API, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) })
+        .then(function (r) { return r.json().catch(function () { return {}; }); })
+        .then(function (r) {
+          btn.disabled = false;
+          if (!r.ok) { stav.textContent = r.error || 'Objednávku se nepodařilo odeslat. Zkuste to prosím znovu nebo nám napište na shop@ebcc.cz.'; return; }
+          uloz([]);
+          var o = $('[data-objednano]'), h = '<h2>Děkujeme, objednávka č. ' + r.num + ' je odeslána</h2>';
+          if (r.test) h += '<p class="doplnime">Zkušební objednávka: zboží se nebude odesílat.</p>';
+          h += '<p>Celkem k úhradě: <strong>' + kc(r.total) + '</strong>. ' + (r.mailed ? 'Potvrzení jsme poslali na váš e-mail.' : 'Potvrzení e-mailem se nepodařilo odeslat, ozveme se Vám.') + '</p>';
+          if (r.pay) {
+            if (r.pay.account || r.pay.iban_f) h += '<p>Číslo účtu: <strong>' + (r.pay.account || r.pay.iban_f) + '</strong><br>Variabilní symbol: <strong>' + r.num + '</strong></p>' + (r.pay.qr ? '<div class="qr" style="max-width:200px">' + r.pay.qr + '</div>' : '');
+            else h += '<p>Číslo účtu k úhradě Vám pošleme e-mailem.</p>';
+          }
+          if (SHOP.thanks) h += '<p></p>';
+          o.innerHTML = h; if (SHOP.thanks) $('p:last-child', o).textContent = SHOP.thanks;
+          o.hidden = false; obj.hidden = true; seznam.hidden = true; prazdny.hidden = true;
+          var dn = $('.doplnime'); if (dn) dn.hidden = true;
+          window.scrollTo(0, 0);
+        })
+        .catch(function () { btn.disabled = false; stav.textContent = 'Odeslání se nepodařilo. Zkuste to prosím znovu nebo nám napište na shop@ebcc.cz.'; });
     });
   }
 

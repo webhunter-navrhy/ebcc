@@ -1,0 +1,91 @@
+{
+  "bank": {
+    "account": "",
+    "iban": "",
+    "name": "Josef Špičák"
+  },
+  "due_days": 7,
+  "vat_note": "",
+  "free_from": 2000,
+  "shipping": [
+    {
+      "id": "osobni",
+      "name": "Osobní odběr – Výšovice 12, 798 09",
+      "note": "Výšovice u Prostějova, po předchozí domluvě. Platba hotově nebo převodem.",
+      "price": 0,
+      "address": false,
+      "active": true,
+      "cash": true
+    },
+    {
+      "id": "ceska-posta",
+      "name": "Česká pošta – balík do ruky",
+      "note": "",
+      "price": 100,
+      "address": true,
+      "active": true,
+      "cod_price": 169
+    },
+    {
+      "id": "zasilkovna",
+      "name": "Zásilkovna – výdejní místo",
+      "note": "Výdejní místo si vyberete v dalším kroku, napište nám jeho název do poznámky.",
+      "price": 99,
+      "address": false,
+      "active": true
+    },
+    {
+      "id": "gls",
+      "name": "GLS",
+      "note": "",
+      "price": 80,
+      "address": true,
+      "active": true,
+      "cod_price": 100
+    },
+    {
+      "id": "ppl",
+      "name": "PPL",
+      "note": "",
+      "price": 100,
+      "address": true,
+      "active": true,
+      "cod_price": 130
+    },
+    {
+      "id": "balikovna",
+      "name": "Balíkovna – výdejní místo",
+      "note": "Napište nám do poznámky název výdejního místa.",
+      "price": 79,
+      "address": false,
+      "active": true
+    },
+    {
+      "id": "slovenska-posta",
+      "name": "Slovensko – Slovenská pošta",
+      "note": "Doručení na Slovensko.",
+      "price": 113,
+      "address": true,
+      "active": true
+    },
+    {
+      "id": "zasilkovna-sk",
+      "name": "Slovensko – Packeta (Zásilkovna)",
+      "note": "Doručení na Slovensko.",
+      "price": 125,
+      "address": false,
+      "active": true
+    },
+    {
+      "id": "gls-sk",
+      "name": "Slovensko – GLS",
+      "note": "Doručení na Slovensko.",
+      "price": 150,
+      "address": true,
+      "active": true
+    }
+  ],
+  "shipping_text": "Zboží odesíláme do 2 pracovních dnů. Doprava je zdarma od 2 000 Kč. Osobní odběr ve Výšovicích je zdarma.",
+  "test_notice": "Zkušební provoz – objednávky se teď neodesílají, slouží k vyzkoušení.",
+  "thanks": "Děkujeme za objednávku. Potvrzení jsme poslali na váš e-mail."
+}
