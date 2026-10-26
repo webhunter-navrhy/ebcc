@@ -183,21 +183,6 @@
           "href": "#kontakt"
         }
       ]
-    },
-    {
-      "id": "zkusebni-kategorie-test",
-      "nazev": "Zkušební kategorie - test",
-      "pod": [],
-      "nav": [
-        {
-          "text": "Obchod",
-          "href": "obchod"
-        },
-        {
-          "text": "Platba a kontakt",
-          "href": "#kontakt"
-        }
-      ]
     }
   ],
   "nav_vychozi": [
