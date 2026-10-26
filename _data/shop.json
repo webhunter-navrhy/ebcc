@@ -1,7 +1,7 @@
 {
   "bank": {
-    "account": "",
-    "iban": "",
+    "account": "2700258351 / 2010",
+    "iban": "CZ86 2010 0000 0027 0025 8351",
     "name": "Josef Špičák"
   },
   "due_days": 7,
