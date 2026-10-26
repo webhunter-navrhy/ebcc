@@ -1,728 +1,728 @@
 [
- {
-  "slug": "xtreme",
-  "puvodni": "macbrite-xtreme-autokosmetika-autolestenka-p140",
-  "nazev": "MacBrite Xtreme",
-  "podtitul": "gel na lak i sklo",
-  "kategorie": "lestenky",
-  "cena": 999,
-  "varianty": [
-   [
-    1,
-    999
-   ],
-   [
-    2,
-    1499
-   ]
-  ],
-  "fotky": [
-   "xtreme.png",
-   "xtreme-2.png"
-  ],
-  "kratce": "Gel, který vyčistí vlasové škrábance a zušlechtí i sklo. Podle výrobce ho jde nanést i na neumyté auto.",
-  "popis": [
-   "Xtreme je gel, kterým lze ošetřit i neumyté vozidlo (kromě zablácených terénních aut). Vyčistí vlasové škrábance a výsledkem je vysoký lesk, hladký povrch a dlouhodobá konzervace proti rzi a organickým látkám.",
-   "Hodí se i na zušlechtění skla. Obsahuje fluorované sloučeniny, které se na povrchu skla navážou. Sklo je ze své podstaty porézní, Xtreme vyplní mikroskopické nerovnosti a povrch je hladší. Za deště je lepší výhled a v zimě jde led snadněji dolů."
-  ],
-  "vlastnosti": [
-   "na všechny typy barev: nové, starší i metalické laky",
-   "dlouhodobá ochrana, vrstva je mrazuvzdorná, odolá automyčkám a autošampon ji nesmyje",
-   "čistí a leští bez brusných přísad, odstraní dehet, hmyz, průmyslové znečištění i rez",
-   "starému laku vrátí lesk",
-   "poradí si i s chromem, sklem, lehkými kovy, dlaždicemi a plastovými okenními rámy",
-   "na okna, hladký plast a gumu už nepotřebujete další přípravky"
-  ],
-  "baleni": "Balení vystačí na 4 vozidla střední velikosti, nanáší se 1–2× ročně. Skladovatelnost je neomezená, lahev chraňte před mrazem.",
-  "postup": [
-   "Lahev pořádně protřepejte.",
-   "Plochu opláchněte od nečistot a prachu.",
-   "Naneste hadrem v tenké vrstvě, auto může být suché i vlhké.",
-   "Chvíli počkejte, až povrch dostane nádech bílé barvy.",
-   "Vyleštěte suchým hadrem. Nedělá šmouhy.",
-   "Při dalším mytí stačí auto jen přeleštit suchým hadrem."
-  ],
-  "povrchy": [
-   "lak",
-   "sklo",
-   "chrom",
-   "hmyz",
-   "plast",
-   "koupelna",
-   "lod"
-  ],
-  "vyber": "Xtreme",
-  "navod": [],
-  "upozorneni": "",
-  "cena_drive": null,
-  "poznamka": "",
-  "zdroj": "https://www.ebcc.cz/macbrite-xtreme-autokosmetika-autolestenka-p140",
-  "skupina": "macbrite"
- },
- {
-  "slug": "nano-glos",
-  "puvodni": "macbrite-nano-glos-autokosmetika-autolestenka-p139",
-  "nazev": "MacBrite Nano Glos",
-  "podtitul": "leštěnka s nano technologií",
-  "kategorie": "lestenky",
-  "cena": 490,
-  "varianty": [
-   [
-    1,
-    490
-   ],
-   [
-    2,
-    840
-   ]
-  ],
-  "fotky": [
-   "nano-glos.png",
-   "nano-glos-2.png"
-  ],
-  "kratce": "Vosk vytvořený nano technologií. Vyčistí jemné škrábance a nezanechá za sebou zbytky vosku.",
-  "popis": [
-   "Nano Glos představuje MacBRITE Chemical Ltd jako svůj technologicky nejvyspělejší vosk (leštěnku) vytvořený pomocí nano technologie. Vyčistí jemné škrábance, dává vysoký lesk a na rozdíl od tradičních vosků nezanechává žádné zbytky.",
-   "Je určená pro auto, loď, karavan, letadlo, motorku, domácnost i průmyslové provozy."
-  ],
-  "vlastnosti": [
-   "na všechny typy barev: nové, starší i metalické laky",
-   "dlouhodobá ochrana, vrstva je mrazuvzdorná, odolá automyčkám a autošampon ji nesmyje",
-   "čistí a leští bez brusných přísad, odstraní dehet, hmyz, průmyslové znečištění i rez",
-   "starému laku vrátí lesk",
-   "poradí si i s chromem, sklem, lehkými kovy, dlaždicemi a plastovými okenními rámy",
-   "na okna, hladký plast a gumu už nepotřebujete další přípravky"
-  ],
-  "baleni": "Balení vystačí na 4 vozidla střední velikosti, nanáší se 1–2× ročně. Skladovatelnost je neomezená, lahev chraňte před mrazem.",
-  "postup": [
-   "Lahev pořádně protřepejte.",
-   "Plochu opláchněte od nečistot a prachu.",
-   "Naneste hadrem v tenké vrstvě, auto může být suché i vlhké.",
-   "Chvíli počkejte, až povrch dostane nádech bílé barvy.",
-   "Vyleštěte suchým hadrem. Nedělá šmouhy.",
-   "Při dalším mytí stačí auto jen přeleštit suchým hadrem."
-  ],
-  "povrchy": [
-   "lak",
-   "sklo",
-   "chrom",
-   "hmyz",
-   "plast",
-   "koupelna",
-   "lod"
-  ],
-  "vyber": "Nano Glos",
-  "navod": [],
-  "upozorneni": "",
-  "cena_drive": null,
-  "poznamka": "",
-  "zdroj": "https://www.ebcc.cz/macbrite-nano-glos-autokosmetika-autolestenka-p139",
-  "skupina": "macbrite"
- },
- {
-  "slug": "lotos",
-  "puvodni": "macbrite-lotos-lestenka-nano-technologie-p160",
-  "nazev": "MacBrite Lotos",
-  "podtitul": "autobalzám s nano efektem",
-  "kategorie": "lestenky",
-  "cena": 490,
-  "varianty": [
-   [
-    1,
-    490
-   ],
-   [
-    2,
-    800
-   ],
-   [
-    3,
-    1090
-   ]
-  ],
-  "fotky": [
-   "lotos.png",
-   "lotos-2.png",
-   "lotos-3.png"
-  ],
-  "kratce": "Navržený pro jakýkoli typ povrchu. Ideální na náročné čištění starších, zoxidovaných nebo znečištěných karoserií.",
-  "popis": [
-   "Lotos je autobalzám s nano efektem, „garáž z láhve“ pro auto, loď i karavan. Byl navržen pro jakýkoli typ povrchu a nejvíc se ukáže u náročného čištění starších, zoxidovaných nebo znečištěných karoserií.",
-   "Hodí se pro auto, loď, karavan, letadlo, motorku, domácnost i průmyslové provozy."
-  ],
-  "vlastnosti": [
-   "na všechny typy barev: nové, starší i metalické laky",
-   "dlouhodobá ochrana, vrstva je mrazuvzdorná, odolá automyčkám a autošampon ji nesmyje",
-   "čistí a leští bez brusných přísad, odstraní dehet, hmyz, průmyslové znečištění i rez",
-   "starému laku vrátí lesk",
-   "poradí si i s chromem, sklem, lehkými kovy, dlaždicemi a plastovými okenními rámy",
-   "na okna, hladký plast a gumu už nepotřebujete další přípravky"
-  ],
-  "baleni": "Balení vystačí na 4 vozidla střední velikosti, nanáší se 1–2× ročně. Skladovatelnost je neomezená, lahev chraňte před mrazem.",
-  "postup": [
-   "Lahev pořádně protřepejte.",
-   "Plochu opláchněte od nečistot a prachu.",
-   "Naneste hadrem v tenké vrstvě, auto může být suché i vlhké.",
-   "Chvíli počkejte, až povrch dostane nádech bílé barvy.",
-   "Vyleštěte suchým hadrem. Nedělá šmouhy.",
-   "Při dalším mytí stačí auto jen přeleštit suchým hadrem."
-  ],
-  "povrchy": [
-   "lak",
-   "sklo",
-   "chrom",
-   "hmyz",
-   "plast",
-   "koupelna",
-   "lod"
-  ],
-  "vyber": "Lotos",
-  "navod": [],
-  "upozorneni": "",
-  "cena_drive": null,
-  "poznamka": "",
-  "zdroj": "https://www.ebcc.cz/macbrite-lotos-lestenka-nano-technologie-p160",
-  "skupina": "macbrite"
- },
- {
-  "slug": "titanium",
-  "puvodni": "macbrite-titanium-darek-p8",
-  "nazev": "MacBrite Titanium",
-  "podtitul": "",
-  "kategorie": "lestenky",
-  "cena": 330,
-  "varianty": [
-   [
-    1,
-    330
-   ],
-   [
-    2,
-    580
-   ],
-   [
-    3,
-    790
-   ],
-   [
-    4,
-    990
-   ]
-  ],
-  "fotky": [
-   "titanium.png",
-   "titanium-2.png"
-  ],
-  "kratce": "Anglická leštěnka na čištění, leštění a konzervaci aut, motorek, lodí, obkladů, zrcadel, oken a všech hladkých ploch.",
-  "popis": [
-   "Titanium je leštěnka, která chrání a dává vysoký lesk autu, lodi, karavanu, letadlu, motorce, ale i věcem v domácnosti. Výhodně vychází při koupi více kusů.",
-   "Kromě laku si poradí s chromem, sklem, lehkými kovy, lakovanými plochami, obklady a dlaždicemi, zrcadly i plastovými okenními rámy."
-  ],
-  "vlastnosti": [
-   "na všechny typy barev: nové, starší i metalické laky",
-   "dlouhodobá ochrana, vrstva je mrazuvzdorná, odolá automyčkám a autošampon ji nesmyje",
-   "čistí a leští bez brusných přísad, odstraní dehet, hmyz, průmyslové znečištění i rez",
-   "starému laku vrátí lesk",
-   "na okna, hladký plast a gumu už nepotřebujete další přípravky",
-   "i na obklady, zrcadla, okna a plastové okenní rámy"
-  ],
-  "baleni": "Balení vystačí na 4 vozidla střední velikosti, nanáší se 1–2× ročně. Skladovatelnost je neomezená, lahev chraňte před mrazem.",
-  "postup": [
-   "Lahev pořádně protřepejte.",
-   "Plochu opláchněte od nečistot a prachu.",
-   "Naneste hadrem v tenké vrstvě, auto může být suché i vlhké.",
-   "Chvíli počkejte, až povrch dostane nádech bílé barvy.",
-   "Vyleštěte suchým hadrem. Nedělá šmouhy.",
-   "Při dalším mytí stačí auto jen přeleštit suchým hadrem."
-  ],
-  "povrchy": [
-   "lak",
-   "sklo",
-   "chrom",
-   "hmyz",
-   "plast",
-   "koupelna",
-   "lod"
-  ],
-  "vyber": "Titanium",
-  "poznamka": "",
-  "navod": [],
-  "upozorneni": "",
-  "cena_drive": null,
-  "zdroj": "https://www.ebcc.cz/macbrite-titanium-darek-p8",
-  "skupina": "macbrite"
- },
- {
-  "slug": "agent-magenta",
-  "puvodni": "macbrite-agent-magenta-p163",
-  "nazev": "MacBrite Agent Magenta",
-  "podtitul": "odstraňovač hmyzu",
-  "kategorie": "pece",
-  "cena": 200,
-  "varianty": [],
-  "fotky": [
-   "agent-magenta.png"
-  ],
-  "kratce": "Odstraní hmyz ze skel, hladkých plastů, zrcadel a světlometů.",
-  "popis": [],
-  "povrchy": [
-   "hmyz",
-   "sklo",
-   "plast"
-  ],
-  "vlastnosti": [],
-  "postup": [],
-  "navod": [],
-  "baleni": "",
-  "upozorneni": "",
-  "cena_drive": null,
-  "poznamka": "",
-  "vyber": "",
-  "zdroj": "https://www.ebcc.cz/macbrite-agent-magenta-p163",
-  "skupina": "macbrite"
- },
- {
-  "slug": "drop-technology",
-  "puvodni": "macbrite-drop-technology-p164",
-  "nazev": "MacBrite Drop Technology",
-  "podtitul": "čistič ráfků a chromu bez kyselin",
-  "kategorie": "pece",
-  "cena": 499,
-  "varianty": [],
-  "fotky": [
-   "drop-technology.png"
-  ],
-  "kratce": "Čistič bez kyselin, vhodný i na nejcitlivější plochy auta. Nejlépe se hodí na chrom, lehké slitiny a hliníkové ráfky.",
-  "popis": [
-   "Drop Technology od MacBrite je zaručeně bez kyselin. Je určený na odstraňování tvrdé silniční špíny a nejvíc se hodí na chrom, lehké slitiny a hliníkové ráfky."
-  ],
-  "povrchy": [
-   "chrom"
-  ],
-  "vlastnosti": [],
-  "postup": [],
-  "navod": [],
-  "baleni": "",
-  "upozorneni": "",
-  "cena_drive": null,
-  "poznamka": "",
-  "vyber": "",
-  "zdroj": "https://www.ebcc.cz/macbrite-drop-technology-p164",
-  "skupina": "macbrite"
- },
- {
-  "slug": "car-sampon",
-  "puvodni": "car-sampon-na-myti-automobylu-p143",
-  "nazev": "CAR šampon",
-  "podtitul": "na mytí aut",
-  "kategorie": "pece",
-  "cena": 99,
-  "varianty": [],
-  "fotky": [
-   "car-sampon.png"
-  ],
-  "kratce": "Univerzální šampon na mytí aut, karavanů, motocyklů, plastových oken i plastového nábytku.",
-  "popis": [],
-  "povrchy": [
-   "lak",
-   "lod",
-   "plast"
-  ],
-  "vlastnosti": [],
-  "postup": [],
-  "navod": [],
-  "baleni": "",
-  "upozorneni": "",
-  "cena_drive": null,
-  "poznamka": "",
-  "vyber": "",
-  "zdroj": "https://www.ebcc.cz/car-sampon-na-myti-automobylu-p143",
-  "skupina": "cistici"
- },
- {
-  "slug": "umela-jelenice",
-  "puvodni": "macbrite-umela-jelenice-p142",
-  "nazev": "MacBrite umělá jelenice",
-  "podtitul": "54 × 43 cm",
-  "kategorie": "pece",
-  "cena": 99,
-  "varianty": [],
-  "fotky": [
-   "umela-jelenice.png"
-  ],
-  "kratce": "Utěrka s dlouhou životností na lakované, chromované a okenní plochy. Měkká, pevná a silně savá.",
-  "popis": [
-   "Nezanechává šmouhy, stopy po kapkách ani chloupky. Hodí se i na čištění čalounění, ochranných potahů a tkanin a univerzálně v domácnosti. Po mytí s ní povrch vysušíte a odsajete mokré plochy."
-  ],
-  "povrchy": [
-   "lak",
-   "sklo",
-   "chrom"
-  ],
-  "vlastnosti": [],
-  "postup": [],
-  "navod": [],
-  "baleni": "",
-  "upozorneni": "",
-  "cena_drive": null,
-  "poznamka": "",
-  "vyber": "",
-  "zdroj": "https://www.ebcc.cz/macbrite-umela-jelenice-p142",
-  "skupina": "doplnky"
- },
- {
-  "slug": "jelenice-houbicka",
-  "puvodni": "macbrite-umela-jelenice-houbicka-p141",
-  "nazev": "MacBrite umělá jelenice – houba",
-  "podtitul": "savá houba",
-  "kategorie": "pece",
-  "cena": 99,
-  "varianty": [],
-  "fotky": [
-   "jelenice-houbicka.png"
-  ],
-  "kratce": "Houba z umělé jelenice na lakované, chromované a okenní plochy. Nezanechává šmouhy ani chloupky.",
-  "popis": [
-   "Měkká, pevná a silně savá houba s dlouhou životností. Po mytí s ní vysušíte povrch, odsajete mokré plochy i zamlžená okna. Hodí se i na čalounění, potahy a tkaniny a do domácnosti."
-  ],
-  "povrchy": [
-   "lak",
-   "sklo",
-   "chrom"
-  ],
-  "vlastnosti": [],
-  "postup": [],
-  "navod": [],
-  "baleni": "",
-  "upozorneni": "",
-  "cena_drive": null,
-  "poznamka": "",
-  "vyber": "",
-  "zdroj": "https://www.ebcc.cz/macbrite-umela-jelenice-houbicka-p141",
-  "skupina": "doplnky"
- },
- {
-  "slug": "save-rouno",
-  "puvodni": "macbrite-save-rouno-lestici-p144",
-  "nazev": "MacBrite savé rouno",
-  "podtitul": "leštící a sací",
-  "kategorie": "pece",
-  "cena": 95,
-  "varianty": [],
-  "fotky": [
-   "save-rouno.png"
-  ],
-  "kratce": "Odsaje vlhké plochy a doleští je do lesku.",
-  "popis": [],
-  "povrchy": [
-   "lak",
-   "sklo"
-  ],
-  "vlastnosti": [],
-  "postup": [],
-  "navod": [],
-  "baleni": "",
-  "upozorneni": "",
-  "cena_drive": null,
-  "poznamka": "",
-  "vyber": "",
-  "zdroj": "https://www.ebcc.cz/macbrite-save-rouno-lestici-p144",
-  "skupina": "doplnky"
- },
- {
-  "slug": "oboustranna-houba",
-  "puvodni": "oboustranna-houba-macbrite-p180",
-  "nazev": "Oboustranná houba MacBrite",
-  "podtitul": "na hmyz i asfalt",
-  "kategorie": "pece",
-  "cena": 30,
-  "varianty": [],
-  "fotky": [
-   "oboustranna-houba.png"
-  ],
-  "kratce": "Houba na organické nečistoty (hmyz) i chemické (asfalt).",
-  "popis": [],
-  "povrchy": [
-   "hmyz"
-  ],
-  "vlastnosti": [],
-  "postup": [],
-  "navod": [],
-  "baleni": "",
-  "upozorneni": "",
-  "cena_drive": null,
-  "poznamka": "",
-  "vyber": "",
-  "zdroj": "https://www.ebcc.cz/oboustranna-houba-macbrite-p180",
-  "skupina": "doplnky"
- },
- {
-  "slug": "turboskrabka",
-  "puvodni": "turbo-skrabka-nerezova-p149",
-  "nazev": "Turboškrabka WHS",
-  "podtitul": "nerezová",
-  "kategorie": "domacnost",
-  "cena": 199,
-  "varianty": [],
-  "fotky": [
-   "turboskrabka.png"
-  ],
-  "kratce": "Nerezová škrabka na kořenovou zeleninu, ovoce a další.",
-  "popis": [],
-  "povrchy": [],
-  "vlastnosti": [],
-  "postup": [],
-  "navod": [],
-  "baleni": "",
-  "upozorneni": "",
-  "cena_drive": null,
-  "poznamka": "",
-  "vyber": "",
-  "zdroj": "https://www.ebcc.cz/turbo-skrabka-nerezova-p149",
-  "skupina": "domaci"
- },
- {
-  "slug": "brit-turboskrabka",
-  "puvodni": "brit-na-turbo-skrabku-p154",
-  "nazev": "Břit do turboškrabky",
-  "podtitul": "originální náhradní",
-  "kategorie": "domacnost",
-  "cena": 99,
-  "varianty": [],
-  "fotky": [
-   "brit-turboskrabka.png"
-  ],
-  "kratce": "Originální náhradní břit do turboškrabky.",
-  "popis": [
-   "Turboškrabka je v kuchyni velká pomocnice při škrábání zeleniny. Až se břit opotřebuje, stačí vyměnit jen ten."
-  ],
-  "povrchy": [],
-  "vlastnosti": [],
-  "postup": [],
-  "navod": [],
-  "baleni": "",
-  "upozorneni": "",
-  "cena_drive": null,
-  "poznamka": "",
-  "vyber": "",
-  "zdroj": "https://www.ebcc.cz/brit-na-turbo-skrabku-p154",
-  "skupina": "domaci"
- },
- {
-  "slug": "cistic-odpadu-a2000",
-  "puvodni": "cistic-odpadu-a-2000-rohrreiniger-p220",
-  "nazev": "Čistič odpadu A 2000",
-  "podtitul": "Rohrreiniger, 100 ml",
-  "kategorie": "domacnost",
-  "cena": 699,
-  "varianty": [],
-  "fotky": [
-   "cistic-odpadu.png"
-  ],
-  "kratce": "Uvolní ucpané odpadní potrubí tlakem. Vhodný i pro plastové trubky.",
-  "popis": [
-   "S čističem A 2000 uvolníte ucpaný odpad úplně jinak než chemií. Tlak a komprese odstraní odolné usazeniny jako vlasy, tuky nebo zbytky mýdla. Trubkám neškodí, jde použít kdekoli v domácnosti a je vhodný i pro plastové potrubí.",
-   "Jako prevence proti ucpání stačí čistič použít čtyřikrát do roka."
-  ],
-  "navod": [
-   "Do umyvadla nebo dřezu napusťte asi 10 cm vody.",
-   "Všechny přepady dobře utěsněte vlhkým hadříkem.",
-   "Nádobku držte rovně nasazenou nad odpadem a stiskněte na 1 vteřinu, nikdy déle.",
-   "Nádobku vyndejte, a když je to potřeba, postup zopakujte."
-  ],
-  "upozorneni": "Nikdy nepracujte bez vody. Když jsou v odpadu zbytky chemických přípravků, počkejte 24 hodin a odpad propláchněte horkou vodou. Nádoba je pod tlakem: chraňte ji před sluncem a teplotou nad 50 °C, nepropichujte ji a nespalujte.",
-  "povrchy": [],
-  "vlastnosti": [],
-  "postup": [],
-  "baleni": "",
-  "cena_drive": null,
-  "poznamka": "",
-  "vyber": "",
-  "zdroj": "https://www.ebcc.cz/cistic-odpadu-a-2000-rohrreiniger-p220",
-  "skupina": "domaci"
- },
- {
-  "slug": "folie-freshnroll",
-  "puvodni": "potravinova-folie-freshnroll-30-cm300-m-krabicka-s-rezackou-p218",
-  "nazev": "Potravinová fólie Fresh'n'Roll",
-  "podtitul": "30 cm × 300 m, krabička s řezačkou",
-  "kategorie": "domacnost",
-  "cena": 329,
-  "varianty": [],
-  "fotky": [
-   "folie-freshnroll.png"
-  ],
-  "kratce": "Certifikovaná fólie na balení potravin s řezačkou. Průměrné domácnosti jedna role vydrží rok.",
-  "popis": [
-   "Na rychlé a snadné balení a skladování potravin v domácnosti i v menších gastro provozech. Rozměr krabičky 88 × 83 × 339 mm, řezačka se nalepí samolepkou, která je na ní už připravená."
-  ],
-  "vlastnosti": [
-   "chrání balené potraviny a drží jejich aroma a čerstvost",
-   "vysoký lesk a průhlednost, dobrá přilnavost",
-   "neobsahuje ftaláty, aditiva jsou na přírodní bázi",
-   "tepelná odolnost od −40 °C do 100 °C, vhodná do mikrovlnné trouby",
-   "antifog: nezamlží se, nepropouští pachy",
-   "ve shodě s nařízením Komise (EU) č. 10/2011"
-  ],
-  "povrchy": [],
-  "postup": [],
-  "navod": [],
-  "baleni": "",
-  "upozorneni": "",
-  "cena_drive": null,
-  "poznamka": "",
-  "vyber": "",
-  "zdroj": "https://www.ebcc.cz/potravinova-folie-freshnroll-30-cm300-m-krabicka-s-rezackou-p218",
-  "skupina": "domaci"
- },
- {
-  "slug": "mlynek",
-  "puvodni": "rucni-mlynek-renykoreni-mechanicky-p145",
-  "nazev": "Ruční mlýnek Reny Koření",
-  "podtitul": "mechanický",
-  "kategorie": "domacnost",
-  "cena": 120,
-  "cena_drive": 199,
-  "varianty": [],
-  "fotky": [
-   "mlynek.png"
-  ],
-  "kratce": "Na hrubozrnnou sůl, jednodruhové koření a hrubé směsi koření.",
-  "popis": [],
-  "povrchy": [],
-  "vlastnosti": [],
-  "postup": [],
-  "navod": [],
-  "baleni": "",
-  "upozorneni": "",
-  "poznamka": "",
-  "vyber": "",
-  "zdroj": "https://www.ebcc.cz/rucni-mlynek-renykoreni-mechanicky-p145",
-  "skupina": "domaci"
- },
- {
-  "slug": "drhlenka",
-  "puvodni": "drhlenka-3ks-reny-koreni-p147",
-  "nazev": "Drhlenka",
-  "podtitul": "3 ks",
-  "kategorie": "domacnost",
-  "cena": 45,
-  "varianty": [],
-  "fotky": [
-   "drhlenka.png"
-  ],
-  "kratce": "Drátěnky na nádobí, balení 3 kusy.",
-  "popis": [],
-  "povrchy": [],
-  "vlastnosti": [],
-  "postup": [],
-  "navod": [],
-  "baleni": "",
-  "upozorneni": "",
-  "cena_drive": null,
-  "poznamka": "",
-  "vyber": "",
-  "zdroj": "https://www.ebcc.cz/drhlenka-3ks-reny-koreni-p147",
-  "skupina": "doplnky"
- },
- {
-  "slug": "citrus-zatka",
-  "puvodni": "citrus-zatka-na-citrony-p153",
-  "nazev": "Citrus zátka na citrony",
-  "podtitul": "",
-  "kategorie": "domacnost",
-  "cena": 20,
-  "varianty": [],
-  "fotky": [
-   "citrus-zatka.png"
-  ],
-  "kratce": "Zátka na citrony.",
-  "popis": [],
-  "povrchy": [],
-  "vlastnosti": [],
-  "postup": [],
-  "navod": [],
-  "baleni": "",
-  "upozorneni": "",
-  "cena_drive": null,
-  "poznamka": "",
-  "vyber": "",
-  "zdroj": "https://www.ebcc.cz/citrus-zatka-na-citrony-p153",
-  "skupina": "domaci"
- },
- {
-  "slug": "hadr-na-podlahu",
-  "puvodni": "hadr-na-podlahu-eurobussinescentralczech-p178",
-  "nazev": "Hadr na podlahu",
-  "podtitul": "",
-  "kategorie": "domacnost",
-  "cena": 35,
-  "varianty": [],
-  "fotky": [
-   "hadr-na-podlahu.png"
-  ],
-  "kratce": "Výjimečně jemný hadr ze speciální tkaniny.",
-  "popis": [],
-  "povrchy": [],
-  "vlastnosti": [],
-  "postup": [],
-  "navod": [],
-  "baleni": "",
-  "upozorneni": "",
-  "cena_drive": null,
-  "poznamka": "",
-  "vyber": "",
-  "zdroj": "https://www.ebcc.cz/hadr-na-podlahu-eurobussinescentralczech-p178",
-  "skupina": "doplnky"
- },
- {
-  "slug": "zahradni-nuzky",
-  "puvodni": "zahradni-nuzky-p5",
-  "nazev": "Zahradní nůžky",
-  "podtitul": "doprodej",
-  "kategorie": "domacnost",
-  "cena": 99,
-  "varianty": [],
-  "fotky": [
-   "zahradni-nuzky.png"
-  ],
-  "kratce": "Celokovové zahradnické nůžky na stříhání a prosvětlování stromků a keřů.",
-  "popis": [],
-  "povrchy": [],
-  "vlastnosti": [],
-  "postup": [],
-  "navod": [],
-  "baleni": "",
-  "upozorneni": "",
-  "cena_drive": null,
-  "poznamka": "",
-  "vyber": "",
-  "zdroj": "https://www.ebcc.cz/zahradni-nuzky-p5",
-  "skupina": "domaci"
- },
- {
-  "slug": "zehlicka-beem",
-  "puvodni": "zehlicka-beem-doprodej-p9",
-  "nazev": "Žehlička BEEM",
-  "podtitul": "doprodej",
-  "kategorie": "domacnost",
-  "cena": 999,
-  "varianty": [],
-  "fotky": [
-   "zehlicka-beem.png"
-  ],
-  "kratce": "Žehlička německé firmy Beem s automatickým vypnutím, když ji odložíte.",
-  "popis": [],
-  "povrchy": [],
-  "vlastnosti": [],
-  "postup": [],
-  "navod": [],
-  "baleni": "",
-  "upozorneni": "",
-  "cena_drive": null,
-  "poznamka": "",
-  "vyber": "",
-  "zdroj": "https://www.ebcc.cz/zehlicka-beem-doprodej-p9",
-  "skupina": "domaci"
- }
+  {
+    "slug": "xtreme",
+    "puvodni": "macbrite-xtreme-autokosmetika-autolestenka-p140",
+    "nazev": "MacBrite Xtreme",
+    "podtitul": "gel na lak i sklo",
+    "kategorie": "lestenky",
+    "cena": 999,
+    "varianty": [
+      [
+        1,
+        999
+      ],
+      [
+        2,
+        1499
+      ]
+    ],
+    "fotky": [
+      "xtreme.png",
+      "xtreme-2.png"
+    ],
+    "kratce": "Gel, který vyčistí vlasové škrábance a zušlechtí i sklo. Podle výrobce ho jde nanést i na neumyté auto.",
+    "popis": [
+      "Xtreme je gel, kterým lze ošetřit i neumyté vozidlo (kromě zablácených terénních aut). Vyčistí vlasové škrábance a výsledkem je vysoký lesk, hladký povrch a dlouhodobá konzervace proti rzi a organickým látkám.",
+      "Hodí se i na zušlechtění skla. Obsahuje fluorované sloučeniny, které se na povrchu skla navážou. Sklo je ze své podstaty porézní, Xtreme vyplní mikroskopické nerovnosti a povrch je hladší. Za deště je lepší výhled a v zimě jde led snadněji dolů."
+    ],
+    "vlastnosti": [
+      "na všechny typy barev: nové, starší i metalické laky",
+      "dlouhodobá ochrana, vrstva je mrazuvzdorná, odolá automyčkám a autošampon ji nesmyje",
+      "čistí a leští bez brusných přísad, odstraní dehet, hmyz, průmyslové znečištění i rez",
+      "starému laku vrátí lesk",
+      "poradí si i s chromem, sklem, lehkými kovy, dlaždicemi a plastovými okenními rámy",
+      "na okna, hladký plast a gumu už nepotřebujete další přípravky"
+    ],
+    "baleni": "Balení vystačí na 4 vozidla střední velikosti, nanáší se 1–2× ročně. Skladovatelnost je neomezená, lahev chraňte před mrazem.",
+    "postup": [
+      "Lahev pořádně protřepejte.",
+      "Plochu opláchněte od nečistot a prachu.",
+      "Naneste hadrem v tenké vrstvě, auto může být suché i vlhké.",
+      "Chvíli počkejte, až povrch dostane nádech bílé barvy.",
+      "Vyleštěte suchým hadrem. Nedělá šmouhy.",
+      "Při dalším mytí stačí auto jen přeleštit suchým hadrem."
+    ],
+    "povrchy": [
+      "lak",
+      "sklo",
+      "chrom",
+      "hmyz",
+      "plast",
+      "koupelna",
+      "lod"
+    ],
+    "vyber": "Xtreme",
+    "navod": [],
+    "upozorneni": "",
+    "cena_drive": null,
+    "poznamka": "",
+    "zdroj": "https://www.ebcc.cz/macbrite-xtreme-autokosmetika-autolestenka-p140",
+    "skupina": "macbrite"
+  },
+  {
+    "slug": "nano-glos",
+    "puvodni": "macbrite-nano-glos-autokosmetika-autolestenka-p139",
+    "nazev": "MacBrite Nano Glos",
+    "podtitul": "leštěnka s nano technologií",
+    "kategorie": "lestenky",
+    "cena": 490,
+    "varianty": [
+      [
+        1,
+        490
+      ],
+      [
+        2,
+        840
+      ]
+    ],
+    "fotky": [
+      "nano-glos.png",
+      "nano-glos-2.png"
+    ],
+    "kratce": "Vosk vytvořený nano technologií. Vyčistí jemné škrábance a nezanechá za sebou zbytky vosku.",
+    "popis": [
+      "Nano Glos představuje MacBRITE Chemical Ltd jako svůj technologicky nejvyspělejší vosk (leštěnku) vytvořený pomocí nano technologie. Vyčistí jemné škrábance, dává vysoký lesk a na rozdíl od tradičních vosků nezanechává žádné zbytky.",
+      "Je určená pro auto, loď, karavan, letadlo, motorku, domácnost i průmyslové provozy."
+    ],
+    "vlastnosti": [
+      "na všechny typy barev: nové, starší i metalické laky",
+      "dlouhodobá ochrana, vrstva je mrazuvzdorná, odolá automyčkám a autošampon ji nesmyje",
+      "čistí a leští bez brusných přísad, odstraní dehet, hmyz, průmyslové znečištění i rez",
+      "starému laku vrátí lesk",
+      "poradí si i s chromem, sklem, lehkými kovy, dlaždicemi a plastovými okenními rámy",
+      "na okna, hladký plast a gumu už nepotřebujete další přípravky"
+    ],
+    "baleni": "Balení vystačí na 4 vozidla střední velikosti, nanáší se 1–2× ročně. Skladovatelnost je neomezená, lahev chraňte před mrazem.",
+    "postup": [
+      "Lahev pořádně protřepejte.",
+      "Plochu opláchněte od nečistot a prachu.",
+      "Naneste hadrem v tenké vrstvě, auto může být suché i vlhké.",
+      "Chvíli počkejte, až povrch dostane nádech bílé barvy.",
+      "Vyleštěte suchým hadrem. Nedělá šmouhy.",
+      "Při dalším mytí stačí auto jen přeleštit suchým hadrem."
+    ],
+    "povrchy": [
+      "lak",
+      "sklo",
+      "chrom",
+      "hmyz",
+      "plast",
+      "koupelna",
+      "lod"
+    ],
+    "vyber": "Nano Glos",
+    "navod": [],
+    "upozorneni": "",
+    "cena_drive": null,
+    "poznamka": "",
+    "zdroj": "https://www.ebcc.cz/macbrite-nano-glos-autokosmetika-autolestenka-p139",
+    "skupina": "macbrite"
+  },
+  {
+    "slug": "lotos",
+    "puvodni": "macbrite-lotos-lestenka-nano-technologie-p160",
+    "nazev": "MacBrite Lotos",
+    "podtitul": "autobalzám s nano efektem",
+    "kategorie": "lestenky",
+    "cena": 490,
+    "varianty": [
+      [
+        1,
+        490
+      ],
+      [
+        2,
+        800
+      ],
+      [
+        3,
+        1090
+      ]
+    ],
+    "fotky": [
+      "lotos.png",
+      "lotos-2.png",
+      "lotos-3.png"
+    ],
+    "kratce": "Navržený pro jakýkoli typ povrchu. Ideální na náročné čištění starších, zoxidovaných nebo znečištěných karoserií.",
+    "popis": [
+      "Lotos je autobalzám s nano efektem, „garáž z láhve“ pro auto, loď i karavan. Byl navržen pro jakýkoli typ povrchu a nejvíc se ukáže u náročného čištění starších, zoxidovaných nebo znečištěných karoserií.",
+      "Hodí se pro auto, loď, karavan, letadlo, motorku, domácnost i průmyslové provozy."
+    ],
+    "vlastnosti": [
+      "na všechny typy barev: nové, starší i metalické laky",
+      "dlouhodobá ochrana, vrstva je mrazuvzdorná, odolá automyčkám a autošampon ji nesmyje",
+      "čistí a leští bez brusných přísad, odstraní dehet, hmyz, průmyslové znečištění i rez",
+      "starému laku vrátí lesk",
+      "poradí si i s chromem, sklem, lehkými kovy, dlaždicemi a plastovými okenními rámy",
+      "na okna, hladký plast a gumu už nepotřebujete další přípravky"
+    ],
+    "baleni": "Balení vystačí na 4 vozidla střední velikosti, nanáší se 1–2× ročně. Skladovatelnost je neomezená, lahev chraňte před mrazem.",
+    "postup": [
+      "Lahev pořádně protřepejte.",
+      "Plochu opláchněte od nečistot a prachu.",
+      "Naneste hadrem v tenké vrstvě, auto může být suché i vlhké.",
+      "Chvíli počkejte, až povrch dostane nádech bílé barvy.",
+      "Vyleštěte suchým hadrem. Nedělá šmouhy.",
+      "Při dalším mytí stačí auto jen přeleštit suchým hadrem."
+    ],
+    "povrchy": [
+      "lak",
+      "sklo",
+      "chrom",
+      "hmyz",
+      "plast",
+      "koupelna",
+      "lod"
+    ],
+    "vyber": "Lotos",
+    "navod": [],
+    "upozorneni": "",
+    "cena_drive": null,
+    "poznamka": "",
+    "zdroj": "https://www.ebcc.cz/macbrite-lotos-lestenka-nano-technologie-p160",
+    "skupina": "macbrite"
+  },
+  {
+    "slug": "titanium",
+    "puvodni": "macbrite-titanium-darek-p8",
+    "nazev": "MacBrite Titanium",
+    "podtitul": "",
+    "kategorie": "lestenky",
+    "cena": 335,
+    "varianty": [
+      [
+        1,
+        330
+      ],
+      [
+        2,
+        580
+      ],
+      [
+        3,
+        790
+      ],
+      [
+        4,
+        990
+      ]
+    ],
+    "fotky": [
+      "titanium.png",
+      "titanium-2.png"
+    ],
+    "kratce": "Anglická leštěnka na čištění, leštění a konzervaci aut, motorek, lodí, obkladů, zrcadel, oken a všech hladkých ploch.",
+    "popis": [
+      "Titanium je leštěnka, která chrání a dává vysoký lesk autu, lodi, karavanu, letadlu, motorce, ale i věcem v domácnosti. Výhodně vychází při koupi více kusů.",
+      "Kromě laku si poradí s chromem, sklem, lehkými kovy, lakovanými plochami, obklady a dlaždicemi, zrcadly i plastovými okenními rámy."
+    ],
+    "vlastnosti": [
+      "na všechny typy barev: nové, starší i metalické laky",
+      "dlouhodobá ochrana, vrstva je mrazuvzdorná, odolá automyčkám a autošampon ji nesmyje",
+      "čistí a leští bez brusných přísad, odstraní dehet, hmyz, průmyslové znečištění i rez",
+      "starému laku vrátí lesk",
+      "na okna, hladký plast a gumu už nepotřebujete další přípravky",
+      "i na obklady, zrcadla, okna a plastové okenní rámy"
+    ],
+    "baleni": "Balení vystačí na 4 vozidla střední velikosti, nanáší se 1–2× ročně. Skladovatelnost je neomezená, lahev chraňte před mrazem.",
+    "postup": [
+      "Lahev pořádně protřepejte.",
+      "Plochu opláchněte od nečistot a prachu.",
+      "Naneste hadrem v tenké vrstvě, auto může být suché i vlhké.",
+      "Chvíli počkejte, až povrch dostane nádech bílé barvy.",
+      "Vyleštěte suchým hadrem. Nedělá šmouhy.",
+      "Při dalším mytí stačí auto jen přeleštit suchým hadrem."
+    ],
+    "povrchy": [
+      "lak",
+      "sklo",
+      "chrom",
+      "hmyz",
+      "plast",
+      "koupelna",
+      "lod"
+    ],
+    "vyber": "Titanium",
+    "poznamka": "",
+    "navod": [],
+    "upozorneni": "",
+    "cena_drive": null,
+    "zdroj": "https://www.ebcc.cz/macbrite-titanium-darek-p8",
+    "skupina": "macbrite"
+  },
+  {
+    "slug": "agent-magenta",
+    "puvodni": "macbrite-agent-magenta-p163",
+    "nazev": "MacBrite Agent Magenta",
+    "podtitul": "odstraňovač hmyzu",
+    "kategorie": "pece",
+    "cena": 200,
+    "varianty": [],
+    "fotky": [
+      "agent-magenta.png"
+    ],
+    "kratce": "Odstraní hmyz ze skel, hladkých plastů, zrcadel a světlometů.",
+    "popis": [],
+    "povrchy": [
+      "hmyz",
+      "sklo",
+      "plast"
+    ],
+    "vlastnosti": [],
+    "postup": [],
+    "navod": [],
+    "baleni": "",
+    "upozorneni": "",
+    "cena_drive": null,
+    "poznamka": "",
+    "vyber": "",
+    "zdroj": "https://www.ebcc.cz/macbrite-agent-magenta-p163",
+    "skupina": "macbrite"
+  },
+  {
+    "slug": "drop-technology",
+    "puvodni": "macbrite-drop-technology-p164",
+    "nazev": "MacBrite Drop Technology",
+    "podtitul": "čistič ráfků a chromu bez kyselin",
+    "kategorie": "pece",
+    "cena": 499,
+    "varianty": [],
+    "fotky": [
+      "drop-technology.png"
+    ],
+    "kratce": "Čistič bez kyselin, vhodný i na nejcitlivější plochy auta. Nejlépe se hodí na chrom, lehké slitiny a hliníkové ráfky.",
+    "popis": [
+      "Drop Technology od MacBrite je zaručeně bez kyselin. Je určený na odstraňování tvrdé silniční špíny a nejvíc se hodí na chrom, lehké slitiny a hliníkové ráfky."
+    ],
+    "povrchy": [
+      "chrom"
+    ],
+    "vlastnosti": [],
+    "postup": [],
+    "navod": [],
+    "baleni": "",
+    "upozorneni": "",
+    "cena_drive": null,
+    "poznamka": "",
+    "vyber": "",
+    "zdroj": "https://www.ebcc.cz/macbrite-drop-technology-p164",
+    "skupina": "macbrite"
+  },
+  {
+    "slug": "car-sampon",
+    "puvodni": "car-sampon-na-myti-automobylu-p143",
+    "nazev": "CAR šampon",
+    "podtitul": "na mytí aut",
+    "kategorie": "pece",
+    "cena": 99,
+    "varianty": [],
+    "fotky": [
+      "car-sampon.png"
+    ],
+    "kratce": "Univerzální šampon na mytí aut, karavanů, motocyklů, plastových oken i plastového nábytku.",
+    "popis": [],
+    "povrchy": [
+      "lak",
+      "lod",
+      "plast"
+    ],
+    "vlastnosti": [],
+    "postup": [],
+    "navod": [],
+    "baleni": "",
+    "upozorneni": "",
+    "cena_drive": null,
+    "poznamka": "",
+    "vyber": "",
+    "zdroj": "https://www.ebcc.cz/car-sampon-na-myti-automobylu-p143",
+    "skupina": "cistici"
+  },
+  {
+    "slug": "umela-jelenice",
+    "puvodni": "macbrite-umela-jelenice-p142",
+    "nazev": "MacBrite umělá jelenice",
+    "podtitul": "54 × 43 cm",
+    "kategorie": "pece",
+    "cena": 99,
+    "varianty": [],
+    "fotky": [
+      "umela-jelenice.png"
+    ],
+    "kratce": "Utěrka s dlouhou životností na lakované, chromované a okenní plochy. Měkká, pevná a silně savá.",
+    "popis": [
+      "Nezanechává šmouhy, stopy po kapkách ani chloupky. Hodí se i na čištění čalounění, ochranných potahů a tkanin a univerzálně v domácnosti. Po mytí s ní povrch vysušíte a odsajete mokré plochy."
+    ],
+    "povrchy": [
+      "lak",
+      "sklo",
+      "chrom"
+    ],
+    "vlastnosti": [],
+    "postup": [],
+    "navod": [],
+    "baleni": "",
+    "upozorneni": "",
+    "cena_drive": null,
+    "poznamka": "",
+    "vyber": "",
+    "zdroj": "https://www.ebcc.cz/macbrite-umela-jelenice-p142",
+    "skupina": "doplnky"
+  },
+  {
+    "slug": "jelenice-houbicka",
+    "puvodni": "macbrite-umela-jelenice-houbicka-p141",
+    "nazev": "MacBrite umělá jelenice – houba",
+    "podtitul": "savá houba",
+    "kategorie": "pece",
+    "cena": 99,
+    "varianty": [],
+    "fotky": [
+      "jelenice-houbicka.png"
+    ],
+    "kratce": "Houba z umělé jelenice na lakované, chromované a okenní plochy. Nezanechává šmouhy ani chloupky.",
+    "popis": [
+      "Měkká, pevná a silně savá houba s dlouhou životností. Po mytí s ní vysušíte povrch, odsajete mokré plochy i zamlžená okna. Hodí se i na čalounění, potahy a tkaniny a do domácnosti."
+    ],
+    "povrchy": [
+      "lak",
+      "sklo",
+      "chrom"
+    ],
+    "vlastnosti": [],
+    "postup": [],
+    "navod": [],
+    "baleni": "",
+    "upozorneni": "",
+    "cena_drive": null,
+    "poznamka": "",
+    "vyber": "",
+    "zdroj": "https://www.ebcc.cz/macbrite-umela-jelenice-houbicka-p141",
+    "skupina": "doplnky"
+  },
+  {
+    "slug": "save-rouno",
+    "puvodni": "macbrite-save-rouno-lestici-p144",
+    "nazev": "MacBrite savé rouno",
+    "podtitul": "leštící a sací",
+    "kategorie": "pece",
+    "cena": 95,
+    "varianty": [],
+    "fotky": [
+      "save-rouno.png"
+    ],
+    "kratce": "Odsaje vlhké plochy a doleští je do lesku.",
+    "popis": [],
+    "povrchy": [
+      "lak",
+      "sklo"
+    ],
+    "vlastnosti": [],
+    "postup": [],
+    "navod": [],
+    "baleni": "",
+    "upozorneni": "",
+    "cena_drive": null,
+    "poznamka": "",
+    "vyber": "",
+    "zdroj": "https://www.ebcc.cz/macbrite-save-rouno-lestici-p144",
+    "skupina": "doplnky"
+  },
+  {
+    "slug": "oboustranna-houba",
+    "puvodni": "oboustranna-houba-macbrite-p180",
+    "nazev": "Oboustranná houba MacBrite",
+    "podtitul": "na hmyz i asfalt",
+    "kategorie": "pece",
+    "cena": 30,
+    "varianty": [],
+    "fotky": [
+      "oboustranna-houba.png"
+    ],
+    "kratce": "Houba na organické nečistoty (hmyz) i chemické (asfalt).",
+    "popis": [],
+    "povrchy": [
+      "hmyz"
+    ],
+    "vlastnosti": [],
+    "postup": [],
+    "navod": [],
+    "baleni": "",
+    "upozorneni": "",
+    "cena_drive": null,
+    "poznamka": "",
+    "vyber": "",
+    "zdroj": "https://www.ebcc.cz/oboustranna-houba-macbrite-p180",
+    "skupina": "doplnky"
+  },
+  {
+    "slug": "turboskrabka",
+    "puvodni": "turbo-skrabka-nerezova-p149",
+    "nazev": "Turboškrabka WHS",
+    "podtitul": "nerezová",
+    "kategorie": "domacnost",
+    "cena": 199,
+    "varianty": [],
+    "fotky": [
+      "turboskrabka.png"
+    ],
+    "kratce": "Nerezová škrabka na kořenovou zeleninu, ovoce a další.",
+    "popis": [],
+    "povrchy": [],
+    "vlastnosti": [],
+    "postup": [],
+    "navod": [],
+    "baleni": "",
+    "upozorneni": "",
+    "cena_drive": null,
+    "poznamka": "",
+    "vyber": "",
+    "zdroj": "https://www.ebcc.cz/turbo-skrabka-nerezova-p149",
+    "skupina": "domaci"
+  },
+  {
+    "slug": "brit-turboskrabka",
+    "puvodni": "brit-na-turbo-skrabku-p154",
+    "nazev": "Břit do turboškrabky",
+    "podtitul": "originální náhradní",
+    "kategorie": "domacnost",
+    "cena": 99,
+    "varianty": [],
+    "fotky": [
+      "brit-turboskrabka.png"
+    ],
+    "kratce": "Originální náhradní břit do turboškrabky.",
+    "popis": [
+      "Turboškrabka je v kuchyni velká pomocnice při škrábání zeleniny. Až se břit opotřebuje, stačí vyměnit jen ten."
+    ],
+    "povrchy": [],
+    "vlastnosti": [],
+    "postup": [],
+    "navod": [],
+    "baleni": "",
+    "upozorneni": "",
+    "cena_drive": null,
+    "poznamka": "",
+    "vyber": "",
+    "zdroj": "https://www.ebcc.cz/brit-na-turbo-skrabku-p154",
+    "skupina": "domaci"
+  },
+  {
+    "slug": "cistic-odpadu-a2000",
+    "puvodni": "cistic-odpadu-a-2000-rohrreiniger-p220",
+    "nazev": "Čistič odpadu A 2000",
+    "podtitul": "Rohrreiniger, 100 ml",
+    "kategorie": "domacnost",
+    "cena": 699,
+    "varianty": [],
+    "fotky": [
+      "cistic-odpadu.png"
+    ],
+    "kratce": "Uvolní ucpané odpadní potrubí tlakem. Vhodný i pro plastové trubky.",
+    "popis": [
+      "S čističem A 2000 uvolníte ucpaný odpad úplně jinak než chemií. Tlak a komprese odstraní odolné usazeniny jako vlasy, tuky nebo zbytky mýdla. Trubkám neškodí, jde použít kdekoli v domácnosti a je vhodný i pro plastové potrubí.",
+      "Jako prevence proti ucpání stačí čistič použít čtyřikrát do roka."
+    ],
+    "navod": [
+      "Do umyvadla nebo dřezu napusťte asi 10 cm vody.",
+      "Všechny přepady dobře utěsněte vlhkým hadříkem.",
+      "Nádobku držte rovně nasazenou nad odpadem a stiskněte na 1 vteřinu, nikdy déle.",
+      "Nádobku vyndejte, a když je to potřeba, postup zopakujte."
+    ],
+    "upozorneni": "Nikdy nepracujte bez vody. Když jsou v odpadu zbytky chemických přípravků, počkejte 24 hodin a odpad propláchněte horkou vodou. Nádoba je pod tlakem: chraňte ji před sluncem a teplotou nad 50 °C, nepropichujte ji a nespalujte.",
+    "povrchy": [],
+    "vlastnosti": [],
+    "postup": [],
+    "baleni": "",
+    "cena_drive": null,
+    "poznamka": "",
+    "vyber": "",
+    "zdroj": "https://www.ebcc.cz/cistic-odpadu-a-2000-rohrreiniger-p220",
+    "skupina": "domaci"
+  },
+  {
+    "slug": "folie-freshnroll",
+    "puvodni": "potravinova-folie-freshnroll-30-cm300-m-krabicka-s-rezackou-p218",
+    "nazev": "Potravinová fólie Fresh'n'Roll",
+    "podtitul": "30 cm × 300 m, krabička s řezačkou",
+    "kategorie": "domacnost",
+    "cena": 329,
+    "varianty": [],
+    "fotky": [
+      "folie-freshnroll.png"
+    ],
+    "kratce": "Certifikovaná fólie na balení potravin s řezačkou. Průměrné domácnosti jedna role vydrží rok.",
+    "popis": [
+      "Na rychlé a snadné balení a skladování potravin v domácnosti i v menších gastro provozech. Rozměr krabičky 88 × 83 × 339 mm, řezačka se nalepí samolepkou, která je na ní už připravená."
+    ],
+    "vlastnosti": [
+      "chrání balené potraviny a drží jejich aroma a čerstvost",
+      "vysoký lesk a průhlednost, dobrá přilnavost",
+      "neobsahuje ftaláty, aditiva jsou na přírodní bázi",
+      "tepelná odolnost od −40 °C do 100 °C, vhodná do mikrovlnné trouby",
+      "antifog: nezamlží se, nepropouští pachy",
+      "ve shodě s nařízením Komise (EU) č. 10/2011"
+    ],
+    "povrchy": [],
+    "postup": [],
+    "navod": [],
+    "baleni": "",
+    "upozorneni": "",
+    "cena_drive": null,
+    "poznamka": "",
+    "vyber": "",
+    "zdroj": "https://www.ebcc.cz/potravinova-folie-freshnroll-30-cm300-m-krabicka-s-rezackou-p218",
+    "skupina": "domaci"
+  },
+  {
+    "slug": "mlynek",
+    "puvodni": "rucni-mlynek-renykoreni-mechanicky-p145",
+    "nazev": "Ruční mlýnek Reny Koření",
+    "podtitul": "mechanický",
+    "kategorie": "domacnost",
+    "cena": 120,
+    "cena_drive": 199,
+    "varianty": [],
+    "fotky": [
+      "mlynek.png"
+    ],
+    "kratce": "Na hrubozrnnou sůl, jednodruhové koření a hrubé směsi koření.",
+    "popis": [],
+    "povrchy": [],
+    "vlastnosti": [],
+    "postup": [],
+    "navod": [],
+    "baleni": "",
+    "upozorneni": "",
+    "poznamka": "",
+    "vyber": "",
+    "zdroj": "https://www.ebcc.cz/rucni-mlynek-renykoreni-mechanicky-p145",
+    "skupina": "domaci"
+  },
+  {
+    "slug": "drhlenka",
+    "puvodni": "drhlenka-3ks-reny-koreni-p147",
+    "nazev": "Drhlenka",
+    "podtitul": "3 ks",
+    "kategorie": "domacnost",
+    "cena": 45,
+    "varianty": [],
+    "fotky": [
+      "drhlenka.png"
+    ],
+    "kratce": "Drátěnky na nádobí, balení 3 kusy.",
+    "popis": [],
+    "povrchy": [],
+    "vlastnosti": [],
+    "postup": [],
+    "navod": [],
+    "baleni": "",
+    "upozorneni": "",
+    "cena_drive": null,
+    "poznamka": "",
+    "vyber": "",
+    "zdroj": "https://www.ebcc.cz/drhlenka-3ks-reny-koreni-p147",
+    "skupina": "doplnky"
+  },
+  {
+    "slug": "citrus-zatka",
+    "puvodni": "citrus-zatka-na-citrony-p153",
+    "nazev": "Citrus zátka na citrony",
+    "podtitul": "",
+    "kategorie": "domacnost",
+    "cena": 20,
+    "varianty": [],
+    "fotky": [
+      "citrus-zatka.png"
+    ],
+    "kratce": "Zátka na citrony.",
+    "popis": [],
+    "povrchy": [],
+    "vlastnosti": [],
+    "postup": [],
+    "navod": [],
+    "baleni": "",
+    "upozorneni": "",
+    "cena_drive": null,
+    "poznamka": "",
+    "vyber": "",
+    "zdroj": "https://www.ebcc.cz/citrus-zatka-na-citrony-p153",
+    "skupina": "domaci"
+  },
+  {
+    "slug": "hadr-na-podlahu",
+    "puvodni": "hadr-na-podlahu-eurobussinescentralczech-p178",
+    "nazev": "Hadr na podlahu",
+    "podtitul": "",
+    "kategorie": "domacnost",
+    "cena": 35,
+    "varianty": [],
+    "fotky": [
+      "hadr-na-podlahu.png"
+    ],
+    "kratce": "Výjimečně jemný hadr ze speciální tkaniny.",
+    "popis": [],
+    "povrchy": [],
+    "vlastnosti": [],
+    "postup": [],
+    "navod": [],
+    "baleni": "",
+    "upozorneni": "",
+    "cena_drive": null,
+    "poznamka": "",
+    "vyber": "",
+    "zdroj": "https://www.ebcc.cz/hadr-na-podlahu-eurobussinescentralczech-p178",
+    "skupina": "doplnky"
+  },
+  {
+    "slug": "zahradni-nuzky",
+    "puvodni": "zahradni-nuzky-p5",
+    "nazev": "Zahradní nůžky",
+    "podtitul": "doprodej",
+    "kategorie": "domacnost",
+    "cena": 99,
+    "varianty": [],
+    "fotky": [
+      "zahradni-nuzky.png"
+    ],
+    "kratce": "Celokovové zahradnické nůžky na stříhání a prosvětlování stromků a keřů.",
+    "popis": [],
+    "povrchy": [],
+    "vlastnosti": [],
+    "postup": [],
+    "navod": [],
+    "baleni": "",
+    "upozorneni": "",
+    "cena_drive": null,
+    "poznamka": "",
+    "vyber": "",
+    "zdroj": "https://www.ebcc.cz/zahradni-nuzky-p5",
+    "skupina": "domaci"
+  },
+  {
+    "slug": "zehlicka-beem",
+    "puvodni": "zehlicka-beem-doprodej-p9",
+    "nazev": "Žehlička BEEM",
+    "podtitul": "doprodej",
+    "kategorie": "domacnost",
+    "cena": 999,
+    "varianty": [],
+    "fotky": [
+      "zehlicka-beem.png"
+    ],
+    "kratce": "Žehlička německé firmy Beem s automatickým vypnutím, když ji odložíte.",
+    "popis": [],
+    "povrchy": [],
+    "vlastnosti": [],
+    "postup": [],
+    "navod": [],
+    "baleni": "",
+    "upozorneni": "",
+    "cena_drive": null,
+    "poznamka": "",
+    "vyber": "",
+    "zdroj": "https://www.ebcc.cz/zehlicka-beem-doprodej-p9",
+    "skupina": "domaci"
+  }
 ]

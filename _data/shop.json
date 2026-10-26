@@ -35,15 +35,6 @@
       "active": true
     },
     {
-      "id": "gls",
-      "name": "GLS",
-      "note": "",
-      "price": 80,
-      "address": true,
-      "active": true,
-      "cod_price": 100
-    },
-    {
       "id": "ppl",
       "name": "PPL",
       "note": "",
@@ -51,6 +42,15 @@
       "address": true,
       "active": true,
       "cod_price": 130
+    },
+    {
+      "id": "gls",
+      "name": "GLS",
+      "note": "",
+      "price": 80,
+      "address": true,
+      "active": true,
+      "cod_price": 100
     },
     {
       "id": "balikovna",
