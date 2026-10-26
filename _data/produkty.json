@@ -724,5 +724,21 @@
     "vyber": "",
     "zdroj": "https://www.ebcc.cz/zehlicka-beem-doprodej-p9",
     "skupina": "domaci"
+  },
+  {
+    "slug": "zkusebni-pokus-test",
+    "nazev": "Zkušební pokus - test",
+    "podtitul": "",
+    "kategorie": "pece",
+    "skupina": "macbrite",
+    "cena": 10,
+    "varianty": [],
+    "fotky": [
+      "uploads/2026-10/zkusebni-pokus-test-537wrw.webp"
+    ],
+    "kratce": "",
+    "popis": [],
+    "vlastnosti": [],
+    "povrchy": []
   }
 ]
